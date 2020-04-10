@@ -1,0 +1,260 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AddTopicCoordinator"
+provides-nominal:
+- "15DiscourseClient19AddTopicCoordinatorC"
+provides-member:
+- ["15DiscourseClient19AddTopicCoordinatorC", ""]
+provides-dynamic-lookup:
+- "addTopicCancelButtonTapped"
+- "addTopicDataManager"
+- "addTopicNavigationController"
+- "finish"
+- "onCancelTapped"
+- "onTopicCreated"
+- "presenter"
+- "start"
+- "topicSuccessfullyAdded"
+depends-top-level:
+- "AddTopicCoordinator"
+- "AddTopicCoordinatorDelegate"
+- "AddTopicDataManager"
+- !private "AddTopicViewController"
+- !private "AddTopicViewModel"
+- "AssignmentPrecedence"
+- !private "BooleanLiteralType"
+- "Coordinator"
+- !private "StringLiteralType"
+- "UINavigationController"
+- "Void"
+depends-member:
+- ["15DiscourseClient19AddTopicCoordinatorC", "AddTopicDataManager"]
+- !private ["15DiscourseClient19AddTopicCoordinatorC", "AddTopicViewController"]
+- !private ["15DiscourseClient19AddTopicCoordinatorC", "AddTopicViewModel"]
+- ["15DiscourseClient19AddTopicCoordinatorC", "UINavigationController"]
+- ["15DiscourseClient19AddTopicCoordinatorC", "Void"]
+- ["15DiscourseClient19AddTopicCoordinatorC", "addTopicCancelButtonTapped"]
+- ["15DiscourseClient19AddTopicCoordinatorC", "addTopicDataManager"]
+- ["15DiscourseClient19AddTopicCoordinatorC", "addTopicNavigationController"]
+- ["15DiscourseClient19AddTopicCoordinatorC", "deinit"]
+- ["15DiscourseClient19AddTopicCoordinatorC", "finish"]
+- ["15DiscourseClient19AddTopicCoordinatorC", "init"]
+- ["15DiscourseClient19AddTopicCoordinatorC", "onCancelTapped"]
+- ["15DiscourseClient19AddTopicCoordinatorC", "onTopicCreated"]
+- ["15DiscourseClient19AddTopicCoordinatorC", "presenter"]
+- ["15DiscourseClient19AddTopicCoordinatorC", "start"]
+- ["15DiscourseClient19AddTopicCoordinatorC", "topicSuccessfullyAdded"]
+- !private ["15DiscourseClient27AddTopicCoordinatorDelegateP", "AddTopicViewController"]
+- !private ["15DiscourseClient27AddTopicCoordinatorDelegateP", "AddTopicViewModel"]
+- !private ["15DiscourseClient27AddTopicCoordinatorDelegateP", "UINavigationController"]
+- ["15DiscourseClient27AddTopicCoordinatorDelegateP", ""]
+- ["15DiscourseClient27AddTopicCoordinatorDelegateP", "addTopicCancelButtonTapped"]
+- !private ["15DiscourseClient27AddTopicCoordinatorDelegateP", "addTopicDataManager"]
+- !private ["15DiscourseClient27AddTopicCoordinatorDelegateP", "addTopicNavigationController"]
+- !private ["15DiscourseClient27AddTopicCoordinatorDelegateP", "onCancelTapped"]
+- !private ["15DiscourseClient27AddTopicCoordinatorDelegateP", "onTopicCreated"]
+- !private ["15DiscourseClient27AddTopicCoordinatorDelegateP", "presenter"]
+- ["15DiscourseClient27AddTopicCoordinatorDelegateP", "topicSuccessfullyAdded"]
+- !private ["15DiscourseClient22AddTopicViewControllerC", "deinit"]
+- !private ["15DiscourseClient22AddTopicViewControllerC", "init"]
+- !private ["15DiscourseClient22AddTopicViewControllerC", "isModalInPresentation"]
+- !private ["15DiscourseClient22AddTopicViewControllerC", "title"]
+- !private ["15DiscourseClient20AddTopicViewDelegateP", "init"]
+- !private ["15DiscourseClient20AddTopicViewDelegateP", "isModalInPresentation"]
+- !private ["15DiscourseClient20AddTopicViewDelegateP", "title"]
+- !private ["15DiscourseClient17AddTopicViewModelC", "coordinatorDelegate"]
+- !private ["15DiscourseClient17AddTopicViewModelC", "init"]
+- !private ["15DiscourseClient17AddTopicViewModelC", "viewDelegate"]
+- !private ["s7CVarArgP", "dismiss"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isModalInPresentation"]
+- !private ["s7CVarArgP", "present"]
+- !private ["s7CVarArgP", "title"]
+- ["15DiscourseClient11CoordinatorC", "AddTopicDataManager"]
+- !private ["15DiscourseClient11CoordinatorC", "AddTopicViewController"]
+- !private ["15DiscourseClient11CoordinatorC", "AddTopicViewModel"]
+- ["15DiscourseClient11CoordinatorC", "UINavigationController"]
+- ["15DiscourseClient11CoordinatorC", "Void"]
+- ["15DiscourseClient11CoordinatorC", ""]
+- ["15DiscourseClient11CoordinatorC", "addTopicCancelButtonTapped"]
+- ["15DiscourseClient11CoordinatorC", "addTopicDataManager"]
+- ["15DiscourseClient11CoordinatorC", "addTopicNavigationController"]
+- ["15DiscourseClient11CoordinatorC", "finish"]
+- ["15DiscourseClient11CoordinatorC", "init"]
+- ["15DiscourseClient11CoordinatorC", "onCancelTapped"]
+- ["15DiscourseClient11CoordinatorC", "onTopicCreated"]
+- ["15DiscourseClient11CoordinatorC", "presenter"]
+- ["15DiscourseClient11CoordinatorC", "start"]
+- ["15DiscourseClient11CoordinatorC", "topicSuccessfullyAdded"]
+- !private ["s28CustomDebugStringConvertibleP", "dismiss"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isModalInPresentation"]
+- !private ["s28CustomDebugStringConvertibleP", "present"]
+- !private ["s28CustomDebugStringConvertibleP", "title"]
+- !private ["s23CustomStringConvertibleP", "dismiss"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isModalInPresentation"]
+- !private ["s23CustomStringConvertibleP", "present"]
+- !private ["s23CustomStringConvertibleP", "title"]
+- !private ["SQ", "AddTopicViewController"]
+- !private ["SQ", "AddTopicViewModel"]
+- !private ["SQ", "UINavigationController"]
+- ["SQ", ""]
+- ["SQ", "addTopicCancelButtonTapped"]
+- !private ["SQ", "addTopicDataManager"]
+- !private ["SQ", "addTopicNavigationController"]
+- !private ["SQ", "dismiss"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isModalInPresentation"]
+- !private ["SQ", "onCancelTapped"]
+- !private ["SQ", "onTopicCreated"]
+- !private ["SQ", "present"]
+- !private ["SQ", "presenter"]
+- !private ["SQ", "title"]
+- ["SQ", "topicSuccessfullyAdded"]
+- !private ["SH", "dismiss"]
+- !private ["SH", "init"]
+- !private ["SH", "isModalInPresentation"]
+- !private ["SH", "present"]
+- !private ["SH", "title"]
+- !private ["So8NSCodingP", "dismiss"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "isModalInPresentation"]
+- !private ["So8NSCodingP", "present"]
+- !private ["So8NSCodingP", "title"]
+- !private ["So26NSExtensionRequestHandlingP", "dismiss"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "isModalInPresentation"]
+- !private ["So26NSExtensionRequestHandlingP", "present"]
+- !private ["So26NSExtensionRequestHandlingP", "title"]
+- !private ["So8NSObjectC", "dismiss"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isModalInPresentation"]
+- !private ["So8NSObjectC", "present"]
+- !private ["So8NSObjectC", "title"]
+- !private ["So8NSObjectP", "dismiss"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isModalInPresentation"]
+- !private ["So8NSObjectP", "present"]
+- !private ["So8NSObjectP", "title"]
+- !private ["So21UIAppearanceContainerP", "dismiss"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "isModalInPresentation"]
+- !private ["So21UIAppearanceContainerP", "present"]
+- !private ["So21UIAppearanceContainerP", "title"]
+- !private ["So18UIContentContainerP", "dismiss"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "isModalInPresentation"]
+- !private ["So18UIContentContainerP", "present"]
+- !private ["So18UIContentContainerP", "title"]
+- !private ["So18UIFocusEnvironmentP", "dismiss"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "isModalInPresentation"]
+- !private ["So18UIFocusEnvironmentP", "present"]
+- !private ["So18UIFocusEnvironmentP", "title"]
+- !private ["So22UINavigationControllerC", "dismiss"]
+- !private ["So22UINavigationControllerC", "init"]
+- !private ["So22UINavigationControllerC", "present"]
+- !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "isModalInPresentation"]
+- !private ["So30UIPasteConfigurationSupportingP", "present"]
+- !private ["So30UIPasteConfigurationSupportingP", "title"]
+- !private ["So11UIResponderC", "dismiss"]
+- !private ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "isModalInPresentation"]
+- !private ["So11UIResponderC", "present"]
+- !private ["So11UIResponderC", "title"]
+- !private ["So30UIResponderStandardEditActionsP", "dismiss"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "isModalInPresentation"]
+- !private ["So30UIResponderStandardEditActionsP", "present"]
+- !private ["So30UIResponderStandardEditActionsP", "title"]
+- !private ["So16UIStateRestoringP", "dismiss"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "isModalInPresentation"]
+- !private ["So16UIStateRestoringP", "present"]
+- !private ["So16UIStateRestoringP", "title"]
+- !private ["So18UITraitEnvironmentP", "dismiss"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "isModalInPresentation"]
+- !private ["So18UITraitEnvironmentP", "present"]
+- !private ["So18UITraitEnvironmentP", "title"]
+- !private ["So23UIUserActivityRestoringP", "dismiss"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "isModalInPresentation"]
+- !private ["So23UIUserActivityRestoringP", "present"]
+- !private ["So23UIUserActivityRestoringP", "title"]
+- !private ["So16UIViewControllerC", "dismiss"]
+- !private ["So16UIViewControllerC", "init"]
+- !private ["So16UIViewControllerC", "isModalInPresentation"]
+- !private ["So16UIViewControllerC", "present"]
+- !private ["So16UIViewControllerC", "title"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isModalInPresentation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dismiss"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isModalInPresentation"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "present"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "title"]
+depends-nominal:
+- "15DiscourseClient19AddTopicCoordinatorC"
+- "15DiscourseClient27AddTopicCoordinatorDelegateP"
+- !private "15DiscourseClient22AddTopicViewControllerC"
+- !private "15DiscourseClient20AddTopicViewDelegateP"
+- !private "15DiscourseClient17AddTopicViewModelC"
+- !private "s7CVarArgP"
+- "15DiscourseClient11CoordinatorC"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s23CustomStringConvertibleP"
+- "SQ"
+- !private "SH"
+- !private "So8NSCodingP"
+- !private "So26NSExtensionRequestHandlingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So21UIAppearanceContainerP"
+- !private "So18UIContentContainerP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So22UINavigationControllerC"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So16UIStateRestoringP"
+- !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
+- !private "So16UIViewControllerC"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "cc66f6efa6f58520a9d66949f7574dad"

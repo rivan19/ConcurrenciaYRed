@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29)"
+options: "068c7007ad6092d347e3a1209d3a4714"
+build_time: [1586555537, 810936000]
+inputs:
+  "/Users/rillopis/Developer/Projects/Xcode/Cursos/Concurrencia y Red/ConcurrenciaYRed/SuperHeores/SuperHeroes/SuperHeroes/ViewController.swift": [1584282673, 193667617]
+  "/Users/rillopis/Developer/Projects/Xcode/Cursos/Concurrencia y Red/ConcurrenciaYRed/SuperHeores/SuperHeroes/SuperHeroes/AppDelegate.swift": [1584282673, 190205086]
+  "/Users/rillopis/Developer/Projects/Xcode/Cursos/Concurrencia y Red/ConcurrenciaYRed/SuperHeores/SuperHeroes/SuperHeroes/SceneDelegate.swift": [1584282673, 193281229]

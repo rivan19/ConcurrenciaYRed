@@ -1,0 +1,444 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "LatestTopicsResponse"
+- "TopicList"
+- "Topic"
+- "Poster"
+provides-nominal:
+- "15DiscourseClient20LatestTopicsResponseV"
+- "15DiscourseClient20LatestTopicsResponseV10CodingKeysO"
+- "15DiscourseClient9TopicListV"
+- "15DiscourseClient9TopicListV10CodingKeysO"
+- "15DiscourseClient5TopicV"
+- "15DiscourseClient5TopicV10CodingKeysO"
+- "15DiscourseClient6PosterV"
+- "15DiscourseClient6PosterV10CodingKeysO"
+provides-member:
+- ["15DiscourseClient20LatestTopicsResponseV", ""]
+- ["15DiscourseClient20LatestTopicsResponseV10CodingKeysO", ""]
+- ["15DiscourseClient9TopicListV", ""]
+- ["15DiscourseClient9TopicListV10CodingKeysO", ""]
+- ["15DiscourseClient5TopicV", ""]
+- ["15DiscourseClient5TopicV10CodingKeysO", ""]
+- ["15DiscourseClient6PosterV", ""]
+- ["15DiscourseClient6PosterV10CodingKeysO", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- "Bool"
+- "Codable"
+- "CodingKey"
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- "LatestTopicsResponse"
+- "Poster"
+- "String"
+- "StringLiteralType"
+- "Topic"
+- "TopicList"
+- !private "_findStringSwitchCase"
+- !private "~="
+depends-member:
+- ["s9CodingKeyP", "=="]
+- ["s9CodingKeyP", "RawValue"]
+- ["s9CodingKeyP", ""]
+- ["s9CodingKeyP", "_Default_RawValue"]
+- !private ["s9CodingKeyP", "_findStringSwitchCase"]
+- ["s9CodingKeyP", "_rawHashValue"]
+- ["s9CodingKeyP", "debugDescription"]
+- ["s9CodingKeyP", "description"]
+- ["s9CodingKeyP", "hash"]
+- ["s9CodingKeyP", "hashValue"]
+- ["s9CodingKeyP", "init"]
+- ["s9CodingKeyP", "intValue"]
+- ["s9CodingKeyP", "rawValue"]
+- ["s9CodingKeyP", "stringValue"]
+- ["15DiscourseClient20LatestTopicsResponseV10CodingKeysO", "=="]
+- ["15DiscourseClient5TopicV10CodingKeysO", "=="]
+- ["15DiscourseClient6PosterV10CodingKeysO", "=="]
+- ["15DiscourseClient9TopicListV10CodingKeysO", "=="]
+- ["15DiscourseClient20LatestTopicsResponseV10CodingKeysO", "RawValue"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "RawValue"]
+- ["15DiscourseClient6PosterV10CodingKeysO", "RawValue"]
+- ["15DiscourseClient9TopicListV10CodingKeysO", "RawValue"]
+- ["15DiscourseClient20LatestTopicsResponseV10CodingKeysO", "_Default_RawValue"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "_Default_RawValue"]
+- ["15DiscourseClient6PosterV10CodingKeysO", "_Default_RawValue"]
+- ["15DiscourseClient9TopicListV10CodingKeysO", "_Default_RawValue"]
+- !private ["15DiscourseClient20LatestTopicsResponseV10CodingKeysO", "_findStringSwitchCase"]
+- !private ["15DiscourseClient5TopicV10CodingKeysO", "_findStringSwitchCase"]
+- !private ["15DiscourseClient6PosterV10CodingKeysO", "_findStringSwitchCase"]
+- !private ["15DiscourseClient9TopicListV10CodingKeysO", "_findStringSwitchCase"]
+- ["15DiscourseClient20LatestTopicsResponseV10CodingKeysO", "_rawHashValue"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "_rawHashValue"]
+- ["15DiscourseClient6PosterV10CodingKeysO", "_rawHashValue"]
+- ["15DiscourseClient9TopicListV10CodingKeysO", "_rawHashValue"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "archived"]
+- ["15DiscourseClient9TopicListV10CodingKeysO", "canCreateTopic"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "closed"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "createdAt"]
+- ["15DiscourseClient20LatestTopicsResponseV10CodingKeysO", "debugDescription"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "debugDescription"]
+- ["15DiscourseClient6PosterV10CodingKeysO", "debugDescription"]
+- ["15DiscourseClient9TopicListV10CodingKeysO", "debugDescription"]
+- ["15DiscourseClient20LatestTopicsResponseV10CodingKeysO", "deinit"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "deinit"]
+- ["15DiscourseClient6PosterV10CodingKeysO", "deinit"]
+- ["15DiscourseClient9TopicListV10CodingKeysO", "deinit"]
+- ["15DiscourseClient20LatestTopicsResponseV10CodingKeysO", "description"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "description"]
+- ["15DiscourseClient6PosterV10CodingKeysO", "description"]
+- ["15DiscourseClient9TopicListV10CodingKeysO", "description"]
+- ["15DiscourseClient6PosterV10CodingKeysO", "extras"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "fancyTitle"]
+- ["15DiscourseClient20LatestTopicsResponseV10CodingKeysO", "hash"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "hash"]
+- ["15DiscourseClient6PosterV10CodingKeysO", "hash"]
+- ["15DiscourseClient9TopicListV10CodingKeysO", "hash"]
+- ["15DiscourseClient20LatestTopicsResponseV10CodingKeysO", "hashValue"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "hashValue"]
+- ["15DiscourseClient6PosterV10CodingKeysO", "hashValue"]
+- ["15DiscourseClient9TopicListV10CodingKeysO", "hashValue"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "highestPostNumber"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "id"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "imageUrl"]
+- ["15DiscourseClient20LatestTopicsResponseV10CodingKeysO", "init"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "init"]
+- ["15DiscourseClient6PosterV10CodingKeysO", "init"]
+- ["15DiscourseClient9TopicListV10CodingKeysO", "init"]
+- ["15DiscourseClient20LatestTopicsResponseV10CodingKeysO", "intValue"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "intValue"]
+- ["15DiscourseClient6PosterV10CodingKeysO", "intValue"]
+- ["15DiscourseClient9TopicListV10CodingKeysO", "intValue"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "lastPosterUserName"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "pinned"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "posters"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "postsCount"]
+- ["15DiscourseClient20LatestTopicsResponseV10CodingKeysO", "rawValue"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "rawValue"]
+- ["15DiscourseClient6PosterV10CodingKeysO", "rawValue"]
+- ["15DiscourseClient9TopicListV10CodingKeysO", "rawValue"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "replyCount"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "slug"]
+- ["15DiscourseClient20LatestTopicsResponseV10CodingKeysO", "stringValue"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "stringValue"]
+- ["15DiscourseClient6PosterV10CodingKeysO", "stringValue"]
+- ["15DiscourseClient9TopicListV10CodingKeysO", "stringValue"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "title"]
+- ["15DiscourseClient20LatestTopicsResponseV10CodingKeysO", "topicList"]
+- ["15DiscourseClient9TopicListV10CodingKeysO", "topics"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "unPinned"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "unSeen"]
+- ["15DiscourseClient6PosterV10CodingKeysO", "userId"]
+- ["15DiscourseClient5TopicV10CodingKeysO", "visible"]
+- ["s28CustomDebugStringConvertibleP", "=="]
+- ["s28CustomDebugStringConvertibleP", "RawValue"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "_Default_RawValue"]
+- !private ["s28CustomDebugStringConvertibleP", "_findStringSwitchCase"]
+- ["s28CustomDebugStringConvertibleP", "_rawHashValue"]
+- ["s28CustomDebugStringConvertibleP", "debugDescription"]
+- ["s28CustomDebugStringConvertibleP", "description"]
+- ["s28CustomDebugStringConvertibleP", "hash"]
+- ["s28CustomDebugStringConvertibleP", "hashValue"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "intValue"]
+- ["s28CustomDebugStringConvertibleP", "rawValue"]
+- ["s28CustomDebugStringConvertibleP", "stringValue"]
+- ["s23CustomStringConvertibleP", "=="]
+- ["s23CustomStringConvertibleP", "RawValue"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_Default_RawValue"]
+- !private ["s23CustomStringConvertibleP", "_findStringSwitchCase"]
+- ["s23CustomStringConvertibleP", "_rawHashValue"]
+- ["s23CustomStringConvertibleP", "debugDescription"]
+- ["s23CustomStringConvertibleP", "description"]
+- ["s23CustomStringConvertibleP", "hash"]
+- ["s23CustomStringConvertibleP", "hashValue"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "intValue"]
+- ["s23CustomStringConvertibleP", "rawValue"]
+- ["s23CustomStringConvertibleP", "stringValue"]
+- ["Se", ""]
+- !private ["Se", "_findStringSwitchCase"]
+- !private ["Se", "archived"]
+- !private ["Se", "canCreateTopic"]
+- !private ["Se", "closed"]
+- !private ["Se", "createdAt"]
+- !private ["Se", "description"]
+- ["Se", "encode"]
+- !private ["Se", "extras"]
+- !private ["Se", "fancyTitle"]
+- !private ["Se", "highestPostNumber"]
+- !private ["Se", "id"]
+- !private ["Se", "imageUrl"]
+- ["Se", "init"]
+- !private ["Se", "lastPosterUserName"]
+- !private ["Se", "pinned"]
+- !private ["Se", "posters"]
+- !private ["Se", "postsCount"]
+- !private ["Se", "replyCount"]
+- !private ["Se", "slug"]
+- !private ["Se", "title"]
+- !private ["Se", "topicList"]
+- !private ["Se", "topics"]
+- !private ["Se", "unPinned"]
+- !private ["Se", "unSeen"]
+- !private ["Se", "userId"]
+- !private ["Se", "visible"]
+- !private ["s7DecoderP", "container"]
+- ["SE", ""]
+- !private ["SE", "_findStringSwitchCase"]
+- !private ["SE", "archived"]
+- !private ["SE", "canCreateTopic"]
+- !private ["SE", "closed"]
+- !private ["SE", "createdAt"]
+- !private ["SE", "description"]
+- ["SE", "encode"]
+- !private ["SE", "extras"]
+- !private ["SE", "fancyTitle"]
+- !private ["SE", "highestPostNumber"]
+- !private ["SE", "id"]
+- !private ["SE", "imageUrl"]
+- ["SE", "init"]
+- !private ["SE", "lastPosterUserName"]
+- !private ["SE", "pinned"]
+- !private ["SE", "posters"]
+- !private ["SE", "postsCount"]
+- !private ["SE", "replyCount"]
+- !private ["SE", "slug"]
+- !private ["SE", "title"]
+- !private ["SE", "topicList"]
+- !private ["SE", "topics"]
+- !private ["SE", "unPinned"]
+- !private ["SE", "unSeen"]
+- !private ["SE", "userId"]
+- !private ["SE", "visible"]
+- !private ["s7EncoderP", "container"]
+- ["SQ", "=="]
+- ["SQ", "RawValue"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "debugDescription"]
+- ["SQ", "description"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- ["SQ", "intValue"]
+- ["SQ", "rawValue"]
+- ["SQ", "stringValue"]
+- ["SH", "=="]
+- ["SH", "RawValue"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- ["SH", "_rawHashValue"]
+- ["SH", "debugDescription"]
+- ["SH", "description"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- ["SH", "intValue"]
+- ["SH", "rawValue"]
+- ["SH", "stringValue"]
+- !private ["s22KeyedDecodingContainerV", "decode"]
+- !private ["s22KeyedDecodingContainerV", "decodeIfPresent"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decode"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decodeIfPresent"]
+- !private ["s22KeyedEncodingContainerV", "encode"]
+- !private ["s22KeyedEncodingContainerV", "encodeIfPresent"]
+- !private ["s30KeyedEncodingContainerProtocolP", "encode"]
+- !private ["s30KeyedEncodingContainerProtocolP", "encodeIfPresent"]
+- ["15DiscourseClient20LatestTopicsResponseV", "CodingKey"]
+- ["15DiscourseClient20LatestTopicsResponseV", "CodingKeys"]
+- ["15DiscourseClient20LatestTopicsResponseV", "String"]
+- ["15DiscourseClient20LatestTopicsResponseV", "TopicList"]
+- !private ["15DiscourseClient20LatestTopicsResponseV", "_findStringSwitchCase"]
+- ["15DiscourseClient20LatestTopicsResponseV", "deinit"]
+- ["15DiscourseClient20LatestTopicsResponseV", "encode"]
+- ["15DiscourseClient20LatestTopicsResponseV", "init"]
+- ["15DiscourseClient20LatestTopicsResponseV", "topicList"]
+- ["15DiscourseClient6PosterV", "CodingKey"]
+- ["15DiscourseClient6PosterV", "CodingKeys"]
+- ["15DiscourseClient6PosterV", "Int"]
+- ["15DiscourseClient6PosterV", "String"]
+- !private ["15DiscourseClient6PosterV", "_findStringSwitchCase"]
+- ["15DiscourseClient6PosterV", "deinit"]
+- ["15DiscourseClient6PosterV", "description"]
+- ["15DiscourseClient6PosterV", "encode"]
+- ["15DiscourseClient6PosterV", "extras"]
+- ["15DiscourseClient6PosterV", "init"]
+- ["15DiscourseClient6PosterV", "userId"]
+- ["SY", "=="]
+- ["SY", "RawValue"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- ["SY", "_rawHashValue"]
+- ["SY", "debugDescription"]
+- ["SY", "description"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "init"]
+- ["SY", "intValue"]
+- ["SY", "rawValue"]
+- ["SY", "stringValue"]
+- ["15DiscourseClient5TopicV", "Bool"]
+- ["15DiscourseClient5TopicV", "CodingKey"]
+- ["15DiscourseClient5TopicV", "CodingKeys"]
+- ["15DiscourseClient5TopicV", "Int"]
+- ["15DiscourseClient5TopicV", "Poster"]
+- ["15DiscourseClient5TopicV", "String"]
+- !private ["15DiscourseClient5TopicV", "_findStringSwitchCase"]
+- ["15DiscourseClient5TopicV", "archived"]
+- ["15DiscourseClient5TopicV", "closed"]
+- ["15DiscourseClient5TopicV", "createdAt"]
+- ["15DiscourseClient5TopicV", "deinit"]
+- ["15DiscourseClient5TopicV", "encode"]
+- ["15DiscourseClient5TopicV", "fancyTitle"]
+- ["15DiscourseClient5TopicV", "highestPostNumber"]
+- ["15DiscourseClient5TopicV", "id"]
+- ["15DiscourseClient5TopicV", "imageUrl"]
+- ["15DiscourseClient5TopicV", "init"]
+- ["15DiscourseClient5TopicV", "lastPosterUserName"]
+- ["15DiscourseClient5TopicV", "pinned"]
+- ["15DiscourseClient5TopicV", "posters"]
+- ["15DiscourseClient5TopicV", "postsCount"]
+- ["15DiscourseClient5TopicV", "replyCount"]
+- ["15DiscourseClient5TopicV", "slug"]
+- ["15DiscourseClient5TopicV", "title"]
+- ["15DiscourseClient5TopicV", "unPinned"]
+- ["15DiscourseClient5TopicV", "unSeen"]
+- ["15DiscourseClient5TopicV", "visible"]
+- ["15DiscourseClient9TopicListV", "Bool"]
+- ["15DiscourseClient9TopicListV", "CodingKey"]
+- ["15DiscourseClient9TopicListV", "CodingKeys"]
+- ["15DiscourseClient9TopicListV", "String"]
+- ["15DiscourseClient9TopicListV", "Topic"]
+- !private ["15DiscourseClient9TopicListV", "_findStringSwitchCase"]
+- ["15DiscourseClient9TopicListV", "canCreateTopic"]
+- ["15DiscourseClient9TopicListV", "deinit"]
+- ["15DiscourseClient9TopicListV", "encode"]
+- ["15DiscourseClient9TopicListV", "init"]
+- ["15DiscourseClient9TopicListV", "topics"]
+depends-nominal:
+- "s9CodingKeyP"
+- "15DiscourseClient20LatestTopicsResponseV10CodingKeysO"
+- "15DiscourseClient5TopicV10CodingKeysO"
+- "15DiscourseClient6PosterV10CodingKeysO"
+- "15DiscourseClient9TopicListV10CodingKeysO"
+- "15DiscourseClient20LatestTopicsResponseV10CodingKeysO"
+- "15DiscourseClient5TopicV10CodingKeysO"
+- "15DiscourseClient6PosterV10CodingKeysO"
+- "15DiscourseClient9TopicListV10CodingKeysO"
+- "15DiscourseClient20LatestTopicsResponseV10CodingKeysO"
+- "15DiscourseClient5TopicV10CodingKeysO"
+- "15DiscourseClient6PosterV10CodingKeysO"
+- "15DiscourseClient9TopicListV10CodingKeysO"
+- !private "15DiscourseClient20LatestTopicsResponseV10CodingKeysO"
+- !private "15DiscourseClient5TopicV10CodingKeysO"
+- !private "15DiscourseClient6PosterV10CodingKeysO"
+- !private "15DiscourseClient9TopicListV10CodingKeysO"
+- "15DiscourseClient20LatestTopicsResponseV10CodingKeysO"
+- "15DiscourseClient5TopicV10CodingKeysO"
+- "15DiscourseClient6PosterV10CodingKeysO"
+- "15DiscourseClient9TopicListV10CodingKeysO"
+- "15DiscourseClient5TopicV10CodingKeysO"
+- "15DiscourseClient9TopicListV10CodingKeysO"
+- "15DiscourseClient5TopicV10CodingKeysO"
+- "15DiscourseClient20LatestTopicsResponseV10CodingKeysO"
+- "15DiscourseClient5TopicV10CodingKeysO"
+- "15DiscourseClient6PosterV10CodingKeysO"
+- "15DiscourseClient9TopicListV10CodingKeysO"
+- "15DiscourseClient20LatestTopicsResponseV10CodingKeysO"
+- "15DiscourseClient5TopicV10CodingKeysO"
+- "15DiscourseClient6PosterV10CodingKeysO"
+- "15DiscourseClient9TopicListV10CodingKeysO"
+- "15DiscourseClient20LatestTopicsResponseV10CodingKeysO"
+- "15DiscourseClient5TopicV10CodingKeysO"
+- "15DiscourseClient6PosterV10CodingKeysO"
+- "15DiscourseClient9TopicListV10CodingKeysO"
+- "15DiscourseClient6PosterV10CodingKeysO"
+- "15DiscourseClient5TopicV10CodingKeysO"
+- "15DiscourseClient20LatestTopicsResponseV10CodingKeysO"
+- "15DiscourseClient5TopicV10CodingKeysO"
+- "15DiscourseClient6PosterV10CodingKeysO"
+- "15DiscourseClient9TopicListV10CodingKeysO"
+- "15DiscourseClient20LatestTopicsResponseV10CodingKeysO"
+- "15DiscourseClient5TopicV10CodingKeysO"
+- "15DiscourseClient6PosterV10CodingKeysO"
+- "15DiscourseClient9TopicListV10CodingKeysO"
+- "15DiscourseClient5TopicV10CodingKeysO"
+- "15DiscourseClient20LatestTopicsResponseV10CodingKeysO"
+- "15DiscourseClient5TopicV10CodingKeysO"
+- "15DiscourseClient6PosterV10CodingKeysO"
+- "15DiscourseClient9TopicListV10CodingKeysO"
+- "15DiscourseClient20LatestTopicsResponseV10CodingKeysO"
+- "15DiscourseClient5TopicV10CodingKeysO"
+- "15DiscourseClient6PosterV10CodingKeysO"
+- "15DiscourseClient9TopicListV10CodingKeysO"
+- "15DiscourseClient5TopicV10CodingKeysO"
+- "15DiscourseClient20LatestTopicsResponseV10CodingKeysO"
+- "15DiscourseClient5TopicV10CodingKeysO"
+- "15DiscourseClient6PosterV10CodingKeysO"
+- "15DiscourseClient9TopicListV10CodingKeysO"
+- "15DiscourseClient5TopicV10CodingKeysO"
+- "15DiscourseClient20LatestTopicsResponseV10CodingKeysO"
+- "15DiscourseClient5TopicV10CodingKeysO"
+- "15DiscourseClient6PosterV10CodingKeysO"
+- "15DiscourseClient9TopicListV10CodingKeysO"
+- "15DiscourseClient5TopicV10CodingKeysO"
+- "15DiscourseClient20LatestTopicsResponseV10CodingKeysO"
+- "15DiscourseClient9TopicListV10CodingKeysO"
+- "15DiscourseClient5TopicV10CodingKeysO"
+- "15DiscourseClient6PosterV10CodingKeysO"
+- "15DiscourseClient5TopicV10CodingKeysO"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- !private "s7DecoderP"
+- "SE"
+- !private "s7EncoderP"
+- "SQ"
+- "SH"
+- !private "s22KeyedDecodingContainerV"
+- !private "s30KeyedDecodingContainerProtocolP"
+- !private "s22KeyedEncodingContainerV"
+- !private "s30KeyedEncodingContainerProtocolP"
+- "15DiscourseClient20LatestTopicsResponseV"
+- "15DiscourseClient6PosterV"
+- "SY"
+- "15DiscourseClient5TopicV"
+- "15DiscourseClient9TopicListV"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "1e38f7073ff700bbf5026bc9249d4efd"

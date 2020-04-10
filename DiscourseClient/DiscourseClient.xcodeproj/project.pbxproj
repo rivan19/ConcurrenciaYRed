@@ -168,10 +168,6 @@
 				627DC5B123E5F581006D8615 /* Assets.xcassets */,
 				627DC5B323E5F581006D8615 /* LaunchScreen.storyboard */,
 				627DC5B623E5F581006D8615 /* Info.plist */,
-				627DC5BF23E5F7B3006D8615 /* AppCoordinator.swift */,
-				62015CBC23EF0C6700673EBB /* TopicsCoordinator.swift */,
-				62015CDE23EF30E600673EBB /* CategoriesCoordinator.swift */,
-				62015CD723EF26C900673EBB /* AddTopicCoordinator.swift */,
 			);
 			path = DiscourseClient;
 			sourceTree = "<group>";
@@ -179,6 +175,10 @@
 		627DC5BC23E5F775006D8615 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				627DC5BF23E5F7B3006D8615 /* AppCoordinator.swift */,
+				62015CBC23EF0C6700673EBB /* TopicsCoordinator.swift */,
+				62015CDE23EF30E600673EBB /* CategoriesCoordinator.swift */,
+				62015CD723EF26C900673EBB /* AddTopicCoordinator.swift */,
 				627DC5BD23E5F7A0006D8615 /* Coordinator.swift */,
 			);
 			path = Coordinator;

@@ -1,0 +1,101 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DiscourseClientDataManager"
+provides-nominal:
+- "15DiscourseClient0aB11DataManagerC"
+provides-member:
+- ["15DiscourseClient0aB11DataManagerC", ""]
+provides-dynamic-lookup:
+- "addTopic"
+- "fetchAllTopics"
+- "fetchTopic"
+- "localDataManager"
+- "remoteDataManager"
+depends-top-level:
+- "AddNewTopicResponse"
+- "AddTopicDataManager"
+- "AssignmentPrecedence"
+- "DiscourseClientDataManager"
+- "DiscourseClientLocalDataManager"
+- "DiscourseClientRemoteDataManager"
+- "Error"
+- "Int"
+- "LatestTopicsResponse"
+- "Result"
+- "SingleTopicResponse"
+- "String"
+- "TopicDetailDataManager"
+- "TopicsDataManager"
+depends-member:
+- ["15DiscourseClient19AddTopicDataManagerP", ""]
+- ["15DiscourseClient19AddTopicDataManagerP", "addTopic"]
+- ["15DiscourseClient19AddTopicDataManagerP", "fetchAllTopics"]
+- ["15DiscourseClient19AddTopicDataManagerP", "fetchTopic"]
+- !private ["15DiscourseClient19AddTopicDataManagerP", "localDataManager"]
+- !private ["15DiscourseClient19AddTopicDataManagerP", "remoteDataManager"]
+- ["15DiscourseClient0aB11DataManagerC", "AddNewTopicResponse"]
+- ["15DiscourseClient0aB11DataManagerC", "DiscourseClientLocalDataManager"]
+- ["15DiscourseClient0aB11DataManagerC", "DiscourseClientRemoteDataManager"]
+- ["15DiscourseClient0aB11DataManagerC", "Error"]
+- ["15DiscourseClient0aB11DataManagerC", "Int"]
+- ["15DiscourseClient0aB11DataManagerC", "LatestTopicsResponse"]
+- ["15DiscourseClient0aB11DataManagerC", "Result"]
+- ["15DiscourseClient0aB11DataManagerC", "SingleTopicResponse"]
+- ["15DiscourseClient0aB11DataManagerC", "String"]
+- ["15DiscourseClient0aB11DataManagerC", "addTopic"]
+- ["15DiscourseClient0aB11DataManagerC", "deinit"]
+- ["15DiscourseClient0aB11DataManagerC", "fetchAllTopics"]
+- ["15DiscourseClient0aB11DataManagerC", "fetchTopic"]
+- ["15DiscourseClient0aB11DataManagerC", "init"]
+- ["15DiscourseClient0aB11DataManagerC", "localDataManager"]
+- ["15DiscourseClient0aB11DataManagerC", "remoteDataManager"]
+- !private ["15DiscourseClient0aB17RemoteDataManagerP", "addTopic"]
+- !private ["15DiscourseClient0aB17RemoteDataManagerP", "fetchAllTopics"]
+- !private ["15DiscourseClient0aB17RemoteDataManagerP", "fetchTopic"]
+- ["15DiscourseClient22TopicDetailDataManagerP", ""]
+- ["15DiscourseClient22TopicDetailDataManagerP", "addTopic"]
+- ["15DiscourseClient22TopicDetailDataManagerP", "fetchAllTopics"]
+- ["15DiscourseClient22TopicDetailDataManagerP", "fetchTopic"]
+- !private ["15DiscourseClient22TopicDetailDataManagerP", "localDataManager"]
+- !private ["15DiscourseClient22TopicDetailDataManagerP", "remoteDataManager"]
+- ["15DiscourseClient17TopicsDataManagerP", ""]
+- ["15DiscourseClient17TopicsDataManagerP", "addTopic"]
+- ["15DiscourseClient17TopicsDataManagerP", "fetchAllTopics"]
+- ["15DiscourseClient17TopicsDataManagerP", "fetchTopic"]
+- !private ["15DiscourseClient17TopicsDataManagerP", "localDataManager"]
+- !private ["15DiscourseClient17TopicsDataManagerP", "remoteDataManager"]
+depends-nominal:
+- "15DiscourseClient19AddTopicDataManagerP"
+- "15DiscourseClient0aB11DataManagerC"
+- !private "15DiscourseClient0aB17RemoteDataManagerP"
+- "15DiscourseClient22TopicDetailDataManagerP"
+- "15DiscourseClient17TopicsDataManagerP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "adb0da222dec3672c63190f9724c0a17"

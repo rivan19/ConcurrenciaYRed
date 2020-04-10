@@ -37,6 +37,29 @@ class TopicsViewModel {
          Asignar el resultado a la lista de viewModels (que representan celdas de la interfaz
          Avisar a la vista de que ya tenemos topics listos para pintar
          */
+        
+        topicsDataManager.fetchAllTopics {[weak self] (result) in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let topics):
+                    
+                    guard let self = self else {
+                        return
+                    }
+                    
+                    //guard let topic = topics.topicList.topics  else {
+                    //    return
+                    //}
+                    
+                    //topicViewModels = TopicCellViewModel(topic: topics.topicList.topics)
+                    self.viewDelegate?.topicsFetched()
+                    
+                    
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        }
     }
 
     func numberOfSections() -> Int {
