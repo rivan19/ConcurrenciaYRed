@@ -52,5 +52,101 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "216E4A67-3E03-4834-A797-C249DB2EDECF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DiscourseClient/DataManager/Remote/SessionAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "send(request:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "216E4A67-3E03-4834-A797-C249DB2EDECF - e3938ced48ebd6a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DiscourseClient.SessionAPI.send&lt;A where A: DiscourseClient.APIRequest&gt;(request: A, completion: (Swift.Result&lt;Swift.Optional&lt;A.Response&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DiscourseClient"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rillopis/Developer/Projects/Xcode/Cursos/Concurrencia%20y%20Red/ConcurrenciaYRed/DiscourseClient/DiscourseClient/DataManager/Remote/SessionAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "341">
+               </Location>
+               <Location
+                  uuid = "216E4A67-3E03-4834-A797-C249DB2EDECF - b6cf7f8b3439af68"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in DiscourseClient.SessionAPI.send&lt;A where A: DiscourseClient.APIRequest&gt;(request: A, completion: (Swift.Result&lt;Swift.Optional&lt;A.Response&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DiscourseClient"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rillopis/Developer/Projects/Xcode/Cursos/Concurrencia%20y%20Red/ConcurrenciaYRed/DiscourseClient/DiscourseClient/DataManager/Remote/SessionAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "448">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F03D766F-ED5C-4379-8FC5-DDDE44EE9F9C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DiscourseClient/AddTopic/AddTopicViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "submitButtonTapped(title:raw:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F03D766F-ED5C-4379-8FC5-DDDE44EE9F9C - bfc2f0daae87791b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DiscourseClient.AddTopicViewModel.submitButtonTapped(title: Swift.String, raw: Swift.String) -&gt; ()"
+                  moduleName = "DiscourseClient"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rillopis/Developer/Projects/Xcode/Cursos/Concurrencia%20y%20Red/ConcurrenciaYRed/DiscourseClient/DiscourseClient/AddTopic/AddTopicViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "571">
+               </Location>
+               <Location
+                  uuid = "F03D766F-ED5C-4379-8FC5-DDDE44EE9F9C - e175785410578808"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Optional&lt;DiscourseClient.AddNewTopicResponse&gt;, Swift.Error&gt;) -&gt; () in DiscourseClient.AddTopicViewModel.submitButtonTapped(title: Swift.String, raw: Swift.String) -&gt; ()"
+                  moduleName = "DiscourseClient"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rillopis/Developer/Projects/Xcode/Cursos/Concurrencia%20y%20Red/ConcurrenciaYRed/DiscourseClient/DiscourseClient/AddTopic/AddTopicViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "183">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

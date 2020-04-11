@@ -13,6 +13,7 @@ provides-dynamic-lookup:
 - "start"
 - "topicDetailBackButtonTapped"
 - "topicDetailDataManager"
+- "topicRemoveButtonTapped"
 - "topicsDataManager"
 - "topicsPlusButtonTapped"
 - "topicsViewModel"
@@ -27,6 +28,8 @@ depends-top-level:
 - "Topic"
 - "TopicDetailCoordinatorDelegate"
 - "TopicDetailDataManager"
+- !private "TopicDetailViewController"
+- !private "TopicDetailViewModel"
 - "TopicsCoordinator"
 - "TopicsCoordinatorDelegate"
 - "TopicsDataManager"
@@ -53,6 +56,8 @@ depends-member:
 - !private ["15DiscourseClient11CoordinatorC", "NSLocalizedString"]
 - ["15DiscourseClient11CoordinatorC", "Topic"]
 - ["15DiscourseClient11CoordinatorC", "TopicDetailDataManager"]
+- !private ["15DiscourseClient11CoordinatorC", "TopicDetailViewController"]
+- !private ["15DiscourseClient11CoordinatorC", "TopicDetailViewModel"]
 - ["15DiscourseClient11CoordinatorC", "TopicsDataManager"]
 - !private ["15DiscourseClient11CoordinatorC", "TopicsViewController"]
 - ["15DiscourseClient11CoordinatorC", "TopicsViewModel"]
@@ -70,6 +75,7 @@ depends-member:
 - ["15DiscourseClient11CoordinatorC", "start"]
 - ["15DiscourseClient11CoordinatorC", "topicDetailBackButtonTapped"]
 - ["15DiscourseClient11CoordinatorC", "topicDetailDataManager"]
+- ["15DiscourseClient11CoordinatorC", "topicRemoveButtonTapped"]
 - ["15DiscourseClient11CoordinatorC", "topicsDataManager"]
 - ["15DiscourseClient11CoordinatorC", "topicsPlusButtonTapped"]
 - ["15DiscourseClient11CoordinatorC", "topicsViewModel"]
@@ -81,8 +87,12 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "popViewController"]
 - !private ["s23CustomStringConvertibleP", "pushViewController"]
 - !private ["s23CustomStringConvertibleP", "title"]
+- !private ["Se", "id"]
+- !private ["SE", "id"]
 - !private ["SQ", "AddTopicCoordinator"]
 - !private ["SQ", "NSLocalizedString"]
+- !private ["SQ", "TopicDetailViewController"]
+- !private ["SQ", "TopicDetailViewModel"]
 - !private ["SQ", "TopicsViewController"]
 - !private ["SQ", "TopicsViewModel"]
 - ["SQ", ""]
@@ -101,6 +111,7 @@ depends-member:
 - !private ["SQ", "title"]
 - ["SQ", "topicDetailBackButtonTapped"]
 - !private ["SQ", "topicDetailDataManager"]
+- ["SQ", "topicRemoveButtonTapped"]
 - !private ["SQ", "topicsDataManager"]
 - ["SQ", "topicsPlusButtonTapped"]
 - !private ["SQ", "topicsViewModel"]
@@ -123,8 +134,11 @@ depends-member:
 - !private ["So8NSObjectP", "popViewController"]
 - !private ["So8NSObjectP", "pushViewController"]
 - !private ["So8NSObjectP", "title"]
+- !private ["15DiscourseClient5TopicV", "id"]
 - !private ["15DiscourseClient30TopicDetailCoordinatorDelegateP", "AddTopicCoordinator"]
 - !private ["15DiscourseClient30TopicDetailCoordinatorDelegateP", "NSLocalizedString"]
+- !private ["15DiscourseClient30TopicDetailCoordinatorDelegateP", "TopicDetailViewController"]
+- !private ["15DiscourseClient30TopicDetailCoordinatorDelegateP", "TopicDetailViewModel"]
 - !private ["15DiscourseClient30TopicDetailCoordinatorDelegateP", "TopicsViewController"]
 - !private ["15DiscourseClient30TopicDetailCoordinatorDelegateP", "TopicsViewModel"]
 - ["15DiscourseClient30TopicDetailCoordinatorDelegateP", ""]
@@ -135,14 +149,23 @@ depends-member:
 - !private ["15DiscourseClient30TopicDetailCoordinatorDelegateP", "removeChildCoordinator"]
 - ["15DiscourseClient30TopicDetailCoordinatorDelegateP", "topicDetailBackButtonTapped"]
 - !private ["15DiscourseClient30TopicDetailCoordinatorDelegateP", "topicDetailDataManager"]
+- ["15DiscourseClient30TopicDetailCoordinatorDelegateP", "topicRemoveButtonTapped"]
 - !private ["15DiscourseClient30TopicDetailCoordinatorDelegateP", "topicsDataManager"]
 - ["15DiscourseClient30TopicDetailCoordinatorDelegateP", "topicsPlusButtonTapped"]
 - !private ["15DiscourseClient30TopicDetailCoordinatorDelegateP", "topicsViewModel"]
+- !private ["15DiscourseClient25TopicDetailViewControllerC", "deinit"]
+- !private ["15DiscourseClient25TopicDetailViewControllerC", "init"]
+- !private ["15DiscourseClient23TopicDetailViewDelegateP", "init"]
+- !private ["15DiscourseClient20TopicDetailViewModelC", "coordinatorDelegate"]
+- !private ["15DiscourseClient20TopicDetailViewModelC", "init"]
+- !private ["15DiscourseClient20TopicDetailViewModelC", "viewDelegate"]
 - !private ["15DiscourseClient17TopicsCoordinatorC", "AddTopicCoordinator"]
 - ["15DiscourseClient17TopicsCoordinatorC", "AddTopicDataManager"]
 - !private ["15DiscourseClient17TopicsCoordinatorC", "NSLocalizedString"]
 - ["15DiscourseClient17TopicsCoordinatorC", "Topic"]
 - ["15DiscourseClient17TopicsCoordinatorC", "TopicDetailDataManager"]
+- !private ["15DiscourseClient17TopicsCoordinatorC", "TopicDetailViewController"]
+- !private ["15DiscourseClient17TopicsCoordinatorC", "TopicDetailViewModel"]
 - ["15DiscourseClient17TopicsCoordinatorC", "TopicsDataManager"]
 - !private ["15DiscourseClient17TopicsCoordinatorC", "TopicsViewController"]
 - ["15DiscourseClient17TopicsCoordinatorC", "TopicsViewModel"]
@@ -158,11 +181,14 @@ depends-member:
 - ["15DiscourseClient17TopicsCoordinatorC", "start"]
 - ["15DiscourseClient17TopicsCoordinatorC", "topicDetailBackButtonTapped"]
 - ["15DiscourseClient17TopicsCoordinatorC", "topicDetailDataManager"]
+- ["15DiscourseClient17TopicsCoordinatorC", "topicRemoveButtonTapped"]
 - ["15DiscourseClient17TopicsCoordinatorC", "topicsDataManager"]
 - ["15DiscourseClient17TopicsCoordinatorC", "topicsPlusButtonTapped"]
 - ["15DiscourseClient17TopicsCoordinatorC", "topicsViewModel"]
 - !private ["15DiscourseClient25TopicsCoordinatorDelegateP", "AddTopicCoordinator"]
 - !private ["15DiscourseClient25TopicsCoordinatorDelegateP", "NSLocalizedString"]
+- !private ["15DiscourseClient25TopicsCoordinatorDelegateP", "TopicDetailViewController"]
+- !private ["15DiscourseClient25TopicsCoordinatorDelegateP", "TopicDetailViewModel"]
 - !private ["15DiscourseClient25TopicsCoordinatorDelegateP", "TopicsViewController"]
 - !private ["15DiscourseClient25TopicsCoordinatorDelegateP", "TopicsViewModel"]
 - ["15DiscourseClient25TopicsCoordinatorDelegateP", ""]
@@ -173,6 +199,7 @@ depends-member:
 - !private ["15DiscourseClient25TopicsCoordinatorDelegateP", "removeChildCoordinator"]
 - ["15DiscourseClient25TopicsCoordinatorDelegateP", "topicDetailBackButtonTapped"]
 - !private ["15DiscourseClient25TopicsCoordinatorDelegateP", "topicDetailDataManager"]
+- ["15DiscourseClient25TopicsCoordinatorDelegateP", "topicRemoveButtonTapped"]
 - !private ["15DiscourseClient25TopicsCoordinatorDelegateP", "topicsDataManager"]
 - ["15DiscourseClient25TopicsCoordinatorDelegateP", "topicsPlusButtonTapped"]
 - !private ["15DiscourseClient25TopicsCoordinatorDelegateP", "topicsViewModel"]
@@ -246,13 +273,19 @@ depends-nominal:
 - "15DiscourseClient11CoordinatorC"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
 - "SQ"
 - !private "SH"
 - !private "So8NSCodingP"
 - !private "So26NSExtensionRequestHandlingP"
 - !private "So8NSObjectC"
 - !private "So8NSObjectP"
+- !private "15DiscourseClient5TopicV"
 - "15DiscourseClient30TopicDetailCoordinatorDelegateP"
+- !private "15DiscourseClient25TopicDetailViewControllerC"
+- !private "15DiscourseClient23TopicDetailViewDelegateP"
+- !private "15DiscourseClient20TopicDetailViewModelC"
 - "15DiscourseClient17TopicsCoordinatorC"
 - "15DiscourseClient25TopicsCoordinatorDelegateP"
 - !private "15DiscourseClient20TopicsViewControllerC"
@@ -302,4 +335,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "15d2cb53025deb896ddf39ab4918b6ed"
+interface-hash: "46f061c7e3590eedd594b91e17ffcda2"

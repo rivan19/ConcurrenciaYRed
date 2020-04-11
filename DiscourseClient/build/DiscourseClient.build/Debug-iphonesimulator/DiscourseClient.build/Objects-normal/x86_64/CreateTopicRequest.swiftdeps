@@ -14,13 +14,11 @@ depends-top-level:
 - "Method"
 - "String"
 - !private "StringLiteralType"
-- !private "fatalError"
 depends-member:
 - ["15DiscourseClient10APIRequestP", "Response"]
 - ["15DiscourseClient10APIRequestP", ""]
 - ["15DiscourseClient10APIRequestP", "body"]
 - !private ["15DiscourseClient10APIRequestP", "createdAt"]
-- !private ["15DiscourseClient10APIRequestP", "fatalError"]
 - ["15DiscourseClient10APIRequestP", "headers"]
 - ["15DiscourseClient10APIRequestP", "method"]
 - ["15DiscourseClient10APIRequestP", "parameters"]
@@ -35,7 +33,6 @@ depends-member:
 - ["15DiscourseClient18CreateTopicRequestV", "body"]
 - ["15DiscourseClient18CreateTopicRequestV", "createdAt"]
 - ["15DiscourseClient18CreateTopicRequestV", "deinit"]
-- !private ["15DiscourseClient18CreateTopicRequestV", "fatalError"]
 - ["15DiscourseClient18CreateTopicRequestV", "headers"]
 - ["15DiscourseClient18CreateTopicRequestV", "init"]
 - ["15DiscourseClient18CreateTopicRequestV", "method"]
@@ -43,10 +40,18 @@ depends-member:
 - ["15DiscourseClient18CreateTopicRequestV", "path"]
 - ["15DiscourseClient18CreateTopicRequestV", "raw"]
 - ["15DiscourseClient18CreateTopicRequestV", "title"]
+- !private ["SQ", "POST"]
+- !private ["SH", "POST"]
+- !private ["15DiscourseClient6MethodO", "POST"]
+- !private ["SY", "POST"]
 depends-nominal:
 - "15DiscourseClient10APIRequestP"
 - "15DiscourseClient19AddNewTopicResponseV"
 - "15DiscourseClient18CreateTopicRequestV"
+- !private "SQ"
+- !private "SH"
+- !private "15DiscourseClient6MethodO"
+- !private "SY"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"

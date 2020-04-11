@@ -85,6 +85,7 @@ depends-member:
 - !private ["s7CVarArgP", "viewControllers"]
 - !private ["15DiscourseClient21CategoriesCoordinatorC", "init"]
 - !private ["15DiscourseClient21CategoriesCoordinatorC", "start"]
+- ["15DiscourseClient21CategoriesDataManagerP", "init"]
 - !private ["Sl", "first"]
 - !private ["Sl", "image"]
 - !private ["Sl", "subscript"]
@@ -423,6 +424,7 @@ depends-nominal:
 - !private "So15CALayerDelegateP"
 - !private "s7CVarArgP"
 - !private "15DiscourseClient21CategoriesCoordinatorC"
+- "15DiscourseClient21CategoriesDataManagerP"
 - !private "Sl"
 - !private "10Foundation15ContiguousBytesP"
 - "15DiscourseClient11CoordinatorC"

@@ -85,6 +85,7 @@ depends-member:
 - !private ["s7CVarArgP", "viewControllers"]
 - !private ["15DiscourseClient21CategoriesCoordinatorC", "init"]
 - !private ["15DiscourseClient21CategoriesCoordinatorC", "start"]
+- ["15DiscourseClient21CategoriesDataManagerP", "init"]
 - !private ["Sl", "first"]
 - !private ["Sl", "image"]
 - !private ["Sl", "subscript"]
@@ -377,6 +378,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "viewControllers"]
 - !private ["So8UIWindowC", "makeKeyAndVisible"]
 - !private ["So8UIWindowC", "rootViewController"]
+- ["15DiscourseClient16UsersDataManagerP", "init"]
 - !private ["s14_ArrayProtocolP", "first"]
 - !private ["s14_ArrayProtocolP", "image"]
 - !private ["s14_ArrayProtocolP", "subscript"]
@@ -423,6 +425,7 @@ depends-nominal:
 - !private "So15CALayerDelegateP"
 - !private "s7CVarArgP"
 - !private "15DiscourseClient21CategoriesCoordinatorC"
+- "15DiscourseClient21CategoriesDataManagerP"
 - !private "Sl"
 - !private "10Foundation15ContiguousBytesP"
 - "15DiscourseClient11CoordinatorC"
@@ -492,6 +495,7 @@ depends-nominal:
 - !private "So6UIViewC"
 - !private "So16UIViewControllerC"
 - !private "So8UIWindowC"
+- "15DiscourseClient16UsersDataManagerP"
 - !private "s14_ArrayProtocolP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s26_ExpressibleByColorLiteralP"

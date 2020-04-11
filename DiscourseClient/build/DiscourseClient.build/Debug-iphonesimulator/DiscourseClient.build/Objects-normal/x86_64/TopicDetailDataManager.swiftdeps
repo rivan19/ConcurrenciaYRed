@@ -10,14 +10,17 @@ depends-top-level:
 - "AnyObject"
 - "Error"
 - "Int"
+- "RemoveTopicResponse"
 - "Result"
 - "SingleTopicResponse"
 - "TopicDetailDataManager"
 depends-member:
 - ["15DiscourseClient22TopicDetailDataManagerP", "Error"]
 - ["15DiscourseClient22TopicDetailDataManagerP", "Int"]
+- ["15DiscourseClient22TopicDetailDataManagerP", "RemoveTopicResponse"]
 - ["15DiscourseClient22TopicDetailDataManagerP", "Result"]
 - ["15DiscourseClient22TopicDetailDataManagerP", "SingleTopicResponse"]
+- ["15DiscourseClient22TopicDetailDataManagerP", "deleteTopic"]
 - ["15DiscourseClient22TopicDetailDataManagerP", "fetchTopic"]
 depends-nominal:
 - "15DiscourseClient22TopicDetailDataManagerP"
@@ -49,4 +52,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "08c7d9643045d199098575ecf03f6e23"
+interface-hash: "4544ba08009b6743605e155c4a99e325"

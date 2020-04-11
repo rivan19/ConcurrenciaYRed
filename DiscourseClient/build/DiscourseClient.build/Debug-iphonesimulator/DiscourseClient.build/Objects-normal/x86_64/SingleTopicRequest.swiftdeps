@@ -9,23 +9,31 @@ provides-dynamic-lookup:
 depends-top-level:
 - "APIRequest"
 - "AssignmentPrecedence"
+- !private "FloatLiteralType"
 - "Int"
+- !private "IntegerLiteralType"
 - "Method"
 - "SingleTopicRequest"
 - "SingleTopicResponse"
 - "String"
 - !private "StringLiteralType"
-- !private "fatalError"
 depends-member:
 - ["15DiscourseClient10APIRequestP", "Response"]
 - ["15DiscourseClient10APIRequestP", ""]
 - ["15DiscourseClient10APIRequestP", "body"]
-- !private ["15DiscourseClient10APIRequestP", "fatalError"]
 - ["15DiscourseClient10APIRequestP", "headers"]
 - !private ["15DiscourseClient10APIRequestP", "id"]
 - ["15DiscourseClient10APIRequestP", "method"]
 - ["15DiscourseClient10APIRequestP", "parameters"]
 - ["15DiscourseClient10APIRequestP", "path"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SQ", "GET"]
+- !private ["SH", "GET"]
+- !private ["15DiscourseClient6MethodO", "GET"]
+- !private ["SY", "GET"]
 - ["15DiscourseClient18SingleTopicRequestV", "Int"]
 - ["15DiscourseClient18SingleTopicRequestV", "Method"]
 - ["15DiscourseClient18SingleTopicRequestV", "Response"]
@@ -33,7 +41,6 @@ depends-member:
 - ["15DiscourseClient18SingleTopicRequestV", "String"]
 - ["15DiscourseClient18SingleTopicRequestV", "body"]
 - ["15DiscourseClient18SingleTopicRequestV", "deinit"]
-- !private ["15DiscourseClient18SingleTopicRequestV", "fatalError"]
 - ["15DiscourseClient18SingleTopicRequestV", "headers"]
 - ["15DiscourseClient18SingleTopicRequestV", "id"]
 - ["15DiscourseClient18SingleTopicRequestV", "init"]
@@ -41,10 +48,22 @@ depends-member:
 - ["15DiscourseClient18SingleTopicRequestV", "parameters"]
 - ["15DiscourseClient18SingleTopicRequestV", "path"]
 - ["15DiscourseClient19SingleTopicResponseV", "deinit"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
 depends-nominal:
 - "15DiscourseClient10APIRequestP"
+- !private "s23CustomStringConvertibleP"
+- !private "s26DefaultStringInterpolationV"
+- !private "SQ"
+- !private "SH"
+- !private "15DiscourseClient6MethodO"
+- !private "SY"
 - "15DiscourseClient18SingleTopicRequestV"
 - "15DiscourseClient19SingleTopicResponseV"
+- !private "s27StringInterpolationProtocolP"
+- !private "s16TextOutputStreamP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"

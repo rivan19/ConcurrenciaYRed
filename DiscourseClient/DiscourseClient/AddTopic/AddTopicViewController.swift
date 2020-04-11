@@ -18,6 +18,15 @@ class AddTopicViewController: UIViewController {
 
         return textField
     }()
+    
+    lazy var rawField: UITextField = {
+        let rawField = UITextField()
+        rawField.translatesAutoresizingMaskIntoConstraints = false
+        rawField.borderStyle = .line
+        rawField.placeholder = NSLocalizedString("Insert topic raw", comment: "")
+        
+        return rawField
+    }()
 
     let viewModel: AddTopicViewModel
 
@@ -40,6 +49,13 @@ class AddTopicViewController: UIViewController {
             textField.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16),
             textField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16)
         ])
+        
+        view.addSubview(rawField)
+        NSLayoutConstraint.activate([
+            rawField.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16),
+            rawField.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16),
+            rawField.topAnchor.constraint(equalTo: textField.bottomAnchor, constant: 8)
+        ])
 
         let submitButton = UIButton(type: .system)
         submitButton.translatesAutoresizingMaskIntoConstraints = false
@@ -52,7 +68,7 @@ class AddTopicViewController: UIViewController {
         NSLayoutConstraint.activate([
             submitButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16),
             submitButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16),
-            submitButton.topAnchor.constraint(equalTo: textField.bottomAnchor, constant: 8)
+            submitButton.topAnchor.constraint(equalTo: rawField.bottomAnchor, constant: 8)
         ])
 
         let rightBarButtonItem: UIBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "multiply"), style: .plain, target: self, action: #selector(cancelButtonTapped))
@@ -65,8 +81,11 @@ class AddTopicViewController: UIViewController {
     }
 
     @objc fileprivate func submitButtonTapped() {
-        guard let text = textField.text, !text.isEmpty else { return }
-        viewModel.submitButtonTapped(title: text)
+        guard let text = textField.text, !text.isEmpty, text.count >= 15 else { return }
+        guard let rawText = rawField.text, !rawText.isEmpty, rawText.count >= 20 else {
+            return
+        }
+        viewModel.submitButtonTapped(title: text, raw: rawText)
     }
 
     fileprivate func showErrorAddingTopicAlert() {

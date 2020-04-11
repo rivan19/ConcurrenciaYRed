@@ -1,51 +1,393 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "SingleTopicResponse"
+- "Posts"
+- "Post"
+- "Details"
 provides-nominal:
 - "15DiscourseClient19SingleTopicResponseV"
+- "15DiscourseClient19SingleTopicResponseV10CodingKeysO"
+- "15DiscourseClient5PostsV"
+- "15DiscourseClient4PostV"
+- "15DiscourseClient4PostV10CodingKeysO"
+- "15DiscourseClient7DetailsV"
+- "15DiscourseClient7DetailsV10CodingKeysO"
 provides-member:
 - ["15DiscourseClient19SingleTopicResponseV", ""]
+- ["15DiscourseClient19SingleTopicResponseV10CodingKeysO", ""]
+- ["15DiscourseClient5PostsV", ""]
+- ["15DiscourseClient4PostV", ""]
+- ["15DiscourseClient4PostV10CodingKeysO", ""]
+- ["15DiscourseClient7DetailsV", ""]
+- ["15DiscourseClient7DetailsV10CodingKeysO", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "=="
+- "Bool"
 - "Codable"
+- "CodingKey"
+- "Details"
+- !private "FloatLiteralType"
+- "Int"
+- !private "IntegerLiteralType"
+- "Post"
+- "Posts"
 - "SingleTopicResponse"
-- !private "StringLiteralType"
+- "String"
+- "StringLiteralType"
+- !private "_findStringSwitchCase"
+- !private "~="
 depends-member:
-- !private ["s9CodingKeyP", ""]
+- ["s9CodingKeyP", "=="]
+- ["s9CodingKeyP", "RawValue"]
+- ["s9CodingKeyP", ""]
+- ["s9CodingKeyP", "_Default_RawValue"]
+- !private ["s9CodingKeyP", "_findStringSwitchCase"]
+- ["s9CodingKeyP", "_rawHashValue"]
 - ["s9CodingKeyP", "debugDescription"]
 - ["s9CodingKeyP", "description"]
+- ["s9CodingKeyP", "hash"]
+- ["s9CodingKeyP", "hashValue"]
 - ["s9CodingKeyP", "init"]
 - ["s9CodingKeyP", "intValue"]
+- ["s9CodingKeyP", "rawValue"]
 - ["s9CodingKeyP", "stringValue"]
-- !private ["s28CustomDebugStringConvertibleP", ""]
+- ["15DiscourseClient19SingleTopicResponseV10CodingKeysO", "=="]
+- ["15DiscourseClient4PostV10CodingKeysO", "=="]
+- ["15DiscourseClient7DetailsV10CodingKeysO", "=="]
+- ["15DiscourseClient19SingleTopicResponseV10CodingKeysO", "RawValue"]
+- ["15DiscourseClient4PostV10CodingKeysO", "RawValue"]
+- ["15DiscourseClient7DetailsV10CodingKeysO", "RawValue"]
+- ["15DiscourseClient19SingleTopicResponseV10CodingKeysO", "_Default_RawValue"]
+- ["15DiscourseClient4PostV10CodingKeysO", "_Default_RawValue"]
+- ["15DiscourseClient7DetailsV10CodingKeysO", "_Default_RawValue"]
+- !private ["15DiscourseClient19SingleTopicResponseV10CodingKeysO", "_findStringSwitchCase"]
+- !private ["15DiscourseClient4PostV10CodingKeysO", "_findStringSwitchCase"]
+- !private ["15DiscourseClient7DetailsV10CodingKeysO", "_findStringSwitchCase"]
+- ["15DiscourseClient19SingleTopicResponseV10CodingKeysO", "_rawHashValue"]
+- ["15DiscourseClient4PostV10CodingKeysO", "_rawHashValue"]
+- ["15DiscourseClient7DetailsV10CodingKeysO", "_rawHashValue"]
+- ["15DiscourseClient4PostV10CodingKeysO", "avatarTemplate"]
+- ["15DiscourseClient7DetailsV10CodingKeysO", "canCreatePost"]
+- ["15DiscourseClient4PostV10CodingKeysO", "canDelete"]
+- ["15DiscourseClient7DetailsV10CodingKeysO", "canDelete"]
+- ["15DiscourseClient4PostV10CodingKeysO", "canEdit"]
+- ["15DiscourseClient7DetailsV10CodingKeysO", "canEdit"]
+- ["15DiscourseClient7DetailsV10CodingKeysO", "canFlagTopic"]
+- ["15DiscourseClient4PostV10CodingKeysO", "canRecover"]
+- ["15DiscourseClient7DetailsV10CodingKeysO", "canReplyAsNewTopic"]
+- ["15DiscourseClient4PostV10CodingKeysO", "canWiki"]
+- ["15DiscourseClient4PostV10CodingKeysO", "cooked"]
+- ["15DiscourseClient19SingleTopicResponseV10CodingKeysO", "debugDescription"]
+- ["15DiscourseClient4PostV10CodingKeysO", "debugDescription"]
+- ["15DiscourseClient7DetailsV10CodingKeysO", "debugDescription"]
+- ["15DiscourseClient19SingleTopicResponseV10CodingKeysO", "deinit"]
+- ["15DiscourseClient4PostV10CodingKeysO", "deinit"]
+- ["15DiscourseClient7DetailsV10CodingKeysO", "deinit"]
+- ["15DiscourseClient19SingleTopicResponseV10CodingKeysO", "description"]
+- ["15DiscourseClient4PostV10CodingKeysO", "description"]
+- ["15DiscourseClient7DetailsV10CodingKeysO", "description"]
+- ["15DiscourseClient19SingleTopicResponseV10CodingKeysO", "details"]
+- ["15DiscourseClient4PostV10CodingKeysO", "displayUserName"]
+- ["15DiscourseClient19SingleTopicResponseV10CodingKeysO", "hash"]
+- ["15DiscourseClient4PostV10CodingKeysO", "hash"]
+- ["15DiscourseClient7DetailsV10CodingKeysO", "hash"]
+- ["15DiscourseClient19SingleTopicResponseV10CodingKeysO", "hashValue"]
+- ["15DiscourseClient4PostV10CodingKeysO", "hashValue"]
+- ["15DiscourseClient7DetailsV10CodingKeysO", "hashValue"]
+- ["15DiscourseClient4PostV10CodingKeysO", "id"]
+- ["15DiscourseClient19SingleTopicResponseV10CodingKeysO", "init"]
+- ["15DiscourseClient4PostV10CodingKeysO", "init"]
+- ["15DiscourseClient7DetailsV10CodingKeysO", "init"]
+- ["15DiscourseClient19SingleTopicResponseV10CodingKeysO", "intValue"]
+- ["15DiscourseClient4PostV10CodingKeysO", "intValue"]
+- ["15DiscourseClient7DetailsV10CodingKeysO", "intValue"]
+- ["15DiscourseClient4PostV10CodingKeysO", "name"]
+- ["15DiscourseClient4PostV10CodingKeysO", "postNumer"]
+- ["15DiscourseClient19SingleTopicResponseV10CodingKeysO", "postStream"]
+- ["15DiscourseClient19SingleTopicResponseV10CodingKeysO", "rawValue"]
+- ["15DiscourseClient4PostV10CodingKeysO", "rawValue"]
+- ["15DiscourseClient7DetailsV10CodingKeysO", "rawValue"]
+- ["15DiscourseClient4PostV10CodingKeysO", "read"]
+- ["15DiscourseClient4PostV10CodingKeysO", "reads"]
+- ["15DiscourseClient19SingleTopicResponseV10CodingKeysO", "stringValue"]
+- ["15DiscourseClient4PostV10CodingKeysO", "stringValue"]
+- ["15DiscourseClient7DetailsV10CodingKeysO", "stringValue"]
+- ["15DiscourseClient4PostV10CodingKeysO", "topicId"]
+- ["15DiscourseClient4PostV10CodingKeysO", "topicSlug"]
+- ["15DiscourseClient4PostV10CodingKeysO", "updatedAt"]
+- ["15DiscourseClient4PostV10CodingKeysO", "userId"]
+- ["15DiscourseClient4PostV10CodingKeysO", "userName"]
+- ["15DiscourseClient4PostV10CodingKeysO", "yours"]
+- ["s28CustomDebugStringConvertibleP", "=="]
+- ["s28CustomDebugStringConvertibleP", "RawValue"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "_Default_RawValue"]
+- !private ["s28CustomDebugStringConvertibleP", "_findStringSwitchCase"]
+- ["s28CustomDebugStringConvertibleP", "_rawHashValue"]
 - ["s28CustomDebugStringConvertibleP", "debugDescription"]
 - ["s28CustomDebugStringConvertibleP", "description"]
+- ["s28CustomDebugStringConvertibleP", "hash"]
+- ["s28CustomDebugStringConvertibleP", "hashValue"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "intValue"]
+- ["s28CustomDebugStringConvertibleP", "rawValue"]
 - ["s28CustomDebugStringConvertibleP", "stringValue"]
-- !private ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "=="]
+- ["s23CustomStringConvertibleP", "RawValue"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_Default_RawValue"]
+- !private ["s23CustomStringConvertibleP", "_findStringSwitchCase"]
+- ["s23CustomStringConvertibleP", "_rawHashValue"]
 - ["s23CustomStringConvertibleP", "debugDescription"]
 - ["s23CustomStringConvertibleP", "description"]
+- ["s23CustomStringConvertibleP", "hash"]
+- ["s23CustomStringConvertibleP", "hashValue"]
 - ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "intValue"]
+- ["s23CustomStringConvertibleP", "rawValue"]
 - ["s23CustomStringConvertibleP", "stringValue"]
 - ["Se", ""]
+- !private ["Se", "_findStringSwitchCase"]
+- !private ["Se", "avatarTemplate"]
+- !private ["Se", "canCreatePost"]
+- !private ["Se", "canDelete"]
+- !private ["Se", "canEdit"]
+- !private ["Se", "canFlagTopic"]
+- !private ["Se", "canRecover"]
+- !private ["Se", "canReplyAsNewTopic"]
+- !private ["Se", "canWiki"]
+- !private ["Se", "cooked"]
+- !private ["Se", "details"]
+- !private ["Se", "displayUserName"]
 - ["Se", "encode"]
+- !private ["Se", "id"]
 - ["Se", "init"]
+- !private ["Se", "name"]
+- !private ["Se", "postNumer"]
+- !private ["Se", "postStream"]
+- !private ["Se", "posts"]
+- !private ["Se", "read"]
+- !private ["Se", "reads"]
+- !private ["Se", "topicId"]
+- !private ["Se", "topicSlug"]
+- !private ["Se", "updatedAt"]
+- !private ["Se", "userId"]
+- !private ["Se", "userName"]
+- !private ["Se", "yours"]
+- !private ["s7DecoderP", "container"]
+- ["15DiscourseClient7DetailsV", "Bool"]
+- ["15DiscourseClient7DetailsV", "CodingKey"]
+- ["15DiscourseClient7DetailsV", "CodingKeys"]
+- ["15DiscourseClient7DetailsV", "String"]
+- !private ["15DiscourseClient7DetailsV", "_findStringSwitchCase"]
+- ["15DiscourseClient7DetailsV", "canCreatePost"]
+- ["15DiscourseClient7DetailsV", "canDelete"]
+- ["15DiscourseClient7DetailsV", "canEdit"]
+- ["15DiscourseClient7DetailsV", "canFlagTopic"]
+- ["15DiscourseClient7DetailsV", "canReplyAsNewTopic"]
+- ["15DiscourseClient7DetailsV", "deinit"]
+- ["15DiscourseClient7DetailsV", "encode"]
+- ["15DiscourseClient7DetailsV", "init"]
 - ["SE", ""]
+- !private ["SE", "_findStringSwitchCase"]
+- !private ["SE", "avatarTemplate"]
+- !private ["SE", "canCreatePost"]
+- !private ["SE", "canDelete"]
+- !private ["SE", "canEdit"]
+- !private ["SE", "canFlagTopic"]
+- !private ["SE", "canRecover"]
+- !private ["SE", "canReplyAsNewTopic"]
+- !private ["SE", "canWiki"]
+- !private ["SE", "cooked"]
+- !private ["SE", "details"]
+- !private ["SE", "displayUserName"]
 - ["SE", "encode"]
+- !private ["SE", "id"]
 - ["SE", "init"]
+- !private ["SE", "name"]
+- !private ["SE", "postNumer"]
+- !private ["SE", "postStream"]
+- !private ["SE", "posts"]
+- !private ["SE", "read"]
+- !private ["SE", "reads"]
+- !private ["SE", "topicId"]
+- !private ["SE", "topicSlug"]
+- !private ["SE", "updatedAt"]
+- !private ["SE", "userId"]
+- !private ["SE", "userName"]
+- !private ["SE", "yours"]
 - !private ["s7EncoderP", "container"]
+- ["SQ", "=="]
+- ["SQ", "RawValue"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "debugDescription"]
+- ["SQ", "description"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- ["SQ", "intValue"]
+- ["SQ", "rawValue"]
+- ["SQ", "stringValue"]
+- ["SH", "=="]
+- ["SH", "RawValue"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- ["SH", "_rawHashValue"]
+- ["SH", "debugDescription"]
+- ["SH", "description"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- ["SH", "intValue"]
+- ["SH", "rawValue"]
+- ["SH", "stringValue"]
+- !private ["s6HasherV", "combine"]
+- !private ["s22KeyedDecodingContainerV", "decode"]
+- !private ["s22KeyedDecodingContainerV", "decodeIfPresent"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decode"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decodeIfPresent"]
+- !private ["s22KeyedEncodingContainerV", "encode"]
+- !private ["s22KeyedEncodingContainerV", "encodeIfPresent"]
+- !private ["s30KeyedEncodingContainerProtocolP", "encode"]
+- !private ["s30KeyedEncodingContainerProtocolP", "encodeIfPresent"]
+- ["15DiscourseClient4PostV", "Bool"]
+- ["15DiscourseClient4PostV", "CodingKey"]
+- ["15DiscourseClient4PostV", "CodingKeys"]
+- ["15DiscourseClient4PostV", "Int"]
+- ["15DiscourseClient4PostV", "String"]
+- !private ["15DiscourseClient4PostV", "_findStringSwitchCase"]
+- ["15DiscourseClient4PostV", "avatarTemplate"]
+- ["15DiscourseClient4PostV", "canDelete"]
+- ["15DiscourseClient4PostV", "canEdit"]
+- ["15DiscourseClient4PostV", "canRecover"]
+- ["15DiscourseClient4PostV", "canWiki"]
+- ["15DiscourseClient4PostV", "cooked"]
+- ["15DiscourseClient4PostV", "deinit"]
+- ["15DiscourseClient4PostV", "displayUserName"]
+- ["15DiscourseClient4PostV", "encode"]
+- ["15DiscourseClient4PostV", "id"]
+- ["15DiscourseClient4PostV", "init"]
+- ["15DiscourseClient4PostV", "name"]
+- ["15DiscourseClient4PostV", "postNumer"]
+- ["15DiscourseClient4PostV", "read"]
+- ["15DiscourseClient4PostV", "reads"]
+- ["15DiscourseClient4PostV", "topicId"]
+- ["15DiscourseClient4PostV", "topicSlug"]
+- ["15DiscourseClient4PostV", "updatedAt"]
+- ["15DiscourseClient4PostV", "userId"]
+- ["15DiscourseClient4PostV", "userName"]
+- ["15DiscourseClient4PostV", "yours"]
+- ["15DiscourseClient5PostsV", "Post"]
+- ["15DiscourseClient5PostsV", "deinit"]
+- ["15DiscourseClient5PostsV", "encode"]
+- ["15DiscourseClient5PostsV", "init"]
+- ["15DiscourseClient5PostsV", "posts"]
+- ["SY", "=="]
+- ["SY", "RawValue"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- ["SY", "_rawHashValue"]
+- ["SY", "debugDescription"]
+- ["SY", "description"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "init"]
+- ["SY", "intValue"]
+- ["SY", "rawValue"]
+- ["SY", "stringValue"]
+- ["15DiscourseClient19SingleTopicResponseV", "CodingKey"]
+- ["15DiscourseClient19SingleTopicResponseV", "CodingKeys"]
+- ["15DiscourseClient19SingleTopicResponseV", "Details"]
+- ["15DiscourseClient19SingleTopicResponseV", "Posts"]
+- ["15DiscourseClient19SingleTopicResponseV", "String"]
+- !private ["15DiscourseClient19SingleTopicResponseV", "_findStringSwitchCase"]
 - ["15DiscourseClient19SingleTopicResponseV", "deinit"]
+- ["15DiscourseClient19SingleTopicResponseV", "details"]
 - ["15DiscourseClient19SingleTopicResponseV", "encode"]
 - ["15DiscourseClient19SingleTopicResponseV", "init"]
+- ["15DiscourseClient19SingleTopicResponseV", "postStream"]
 depends-nominal:
 - "s9CodingKeyP"
+- "15DiscourseClient19SingleTopicResponseV10CodingKeysO"
+- "15DiscourseClient4PostV10CodingKeysO"
+- "15DiscourseClient7DetailsV10CodingKeysO"
+- "15DiscourseClient19SingleTopicResponseV10CodingKeysO"
+- "15DiscourseClient4PostV10CodingKeysO"
+- "15DiscourseClient7DetailsV10CodingKeysO"
+- "15DiscourseClient19SingleTopicResponseV10CodingKeysO"
+- "15DiscourseClient4PostV10CodingKeysO"
+- "15DiscourseClient7DetailsV10CodingKeysO"
+- !private "15DiscourseClient19SingleTopicResponseV10CodingKeysO"
+- !private "15DiscourseClient4PostV10CodingKeysO"
+- !private "15DiscourseClient7DetailsV10CodingKeysO"
+- "15DiscourseClient19SingleTopicResponseV10CodingKeysO"
+- "15DiscourseClient4PostV10CodingKeysO"
+- "15DiscourseClient7DetailsV10CodingKeysO"
+- "15DiscourseClient4PostV10CodingKeysO"
+- "15DiscourseClient7DetailsV10CodingKeysO"
+- "15DiscourseClient4PostV10CodingKeysO"
+- "15DiscourseClient7DetailsV10CodingKeysO"
+- "15DiscourseClient4PostV10CodingKeysO"
+- "15DiscourseClient7DetailsV10CodingKeysO"
+- "15DiscourseClient4PostV10CodingKeysO"
+- "15DiscourseClient7DetailsV10CodingKeysO"
+- "15DiscourseClient4PostV10CodingKeysO"
+- "15DiscourseClient19SingleTopicResponseV10CodingKeysO"
+- "15DiscourseClient4PostV10CodingKeysO"
+- "15DiscourseClient7DetailsV10CodingKeysO"
+- "15DiscourseClient19SingleTopicResponseV10CodingKeysO"
+- "15DiscourseClient4PostV10CodingKeysO"
+- "15DiscourseClient7DetailsV10CodingKeysO"
+- "15DiscourseClient19SingleTopicResponseV10CodingKeysO"
+- "15DiscourseClient4PostV10CodingKeysO"
+- "15DiscourseClient7DetailsV10CodingKeysO"
+- "15DiscourseClient19SingleTopicResponseV10CodingKeysO"
+- "15DiscourseClient4PostV10CodingKeysO"
+- "15DiscourseClient19SingleTopicResponseV10CodingKeysO"
+- "15DiscourseClient4PostV10CodingKeysO"
+- "15DiscourseClient7DetailsV10CodingKeysO"
+- "15DiscourseClient19SingleTopicResponseV10CodingKeysO"
+- "15DiscourseClient4PostV10CodingKeysO"
+- "15DiscourseClient7DetailsV10CodingKeysO"
+- "15DiscourseClient4PostV10CodingKeysO"
+- "15DiscourseClient19SingleTopicResponseV10CodingKeysO"
+- "15DiscourseClient4PostV10CodingKeysO"
+- "15DiscourseClient7DetailsV10CodingKeysO"
+- "15DiscourseClient19SingleTopicResponseV10CodingKeysO"
+- "15DiscourseClient4PostV10CodingKeysO"
+- "15DiscourseClient7DetailsV10CodingKeysO"
+- "15DiscourseClient4PostV10CodingKeysO"
+- "15DiscourseClient19SingleTopicResponseV10CodingKeysO"
+- "15DiscourseClient4PostV10CodingKeysO"
+- "15DiscourseClient7DetailsV10CodingKeysO"
+- "15DiscourseClient4PostV10CodingKeysO"
+- "15DiscourseClient19SingleTopicResponseV10CodingKeysO"
+- "15DiscourseClient4PostV10CodingKeysO"
+- "15DiscourseClient7DetailsV10CodingKeysO"
+- "15DiscourseClient4PostV10CodingKeysO"
 - "s28CustomDebugStringConvertibleP"
 - "s23CustomStringConvertibleP"
 - "Se"
+- !private "s7DecoderP"
+- "15DiscourseClient7DetailsV"
 - "SE"
 - !private "s7EncoderP"
+- "SQ"
+- "SH"
+- !private "s6HasherV"
+- !private "s22KeyedDecodingContainerV"
+- !private "s30KeyedDecodingContainerProtocolP"
+- !private "s22KeyedEncodingContainerV"
+- !private "s30KeyedEncodingContainerProtocolP"
+- "15DiscourseClient4PostV"
+- "15DiscourseClient5PostsV"
+- "SY"
 - "15DiscourseClient19SingleTopicResponseV"
 depends-dynamic-lookup:
 depends-external:
@@ -75,4 +417,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "27be6f063ca5c30a3a2ff4feb9f4bcce"
+interface-hash: "7ed828e7e5e9f1badaf4b06207097a85"

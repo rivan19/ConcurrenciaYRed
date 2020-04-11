@@ -6,6 +6,8 @@ provides-nominal:
 provides-member:
 - ["15DiscourseClient21CategoriesCoordinatorC", ""]
 provides-dynamic-lookup:
+- "categoriesViewModel"
+- "categoryDataManager"
 - "finish"
 - "presenter"
 - "start"
@@ -13,8 +15,9 @@ depends-top-level:
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
 - "CategoriesCoordinator"
+- "CategoriesDataManager"
 - !private "CategoriesViewController"
-- !private "CategoriesViewModel"
+- "CategoriesViewModel"
 - "Coordinator"
 - !private "NSLocalizedString"
 - !private "StringLiteralType"
@@ -23,10 +26,13 @@ depends-member:
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "pushViewController"]
 - !private ["s7CVarArgP", "title"]
+- ["15DiscourseClient21CategoriesCoordinatorC", "CategoriesDataManager"]
 - !private ["15DiscourseClient21CategoriesCoordinatorC", "CategoriesViewController"]
-- !private ["15DiscourseClient21CategoriesCoordinatorC", "CategoriesViewModel"]
+- ["15DiscourseClient21CategoriesCoordinatorC", "CategoriesViewModel"]
 - !private ["15DiscourseClient21CategoriesCoordinatorC", "NSLocalizedString"]
 - ["15DiscourseClient21CategoriesCoordinatorC", "UINavigationController"]
+- ["15DiscourseClient21CategoriesCoordinatorC", "categoriesViewModel"]
+- ["15DiscourseClient21CategoriesCoordinatorC", "categoryDataManager"]
 - ["15DiscourseClient21CategoriesCoordinatorC", "deinit"]
 - ["15DiscourseClient21CategoriesCoordinatorC", "finish"]
 - ["15DiscourseClient21CategoriesCoordinatorC", "init"]
@@ -35,12 +41,18 @@ depends-member:
 - !private ["15DiscourseClient24CategoriesViewControllerC", "deinit"]
 - !private ["15DiscourseClient24CategoriesViewControllerC", "init"]
 - !private ["15DiscourseClient24CategoriesViewControllerC", "title"]
+- !private ["15DiscourseClient22CategoriesViewDelegateP", "init"]
+- !private ["15DiscourseClient22CategoriesViewDelegateP", "title"]
 - !private ["15DiscourseClient19CategoriesViewModelC", "init"]
+- !private ["15DiscourseClient19CategoriesViewModelC", "viewDelegate"]
+- ["15DiscourseClient11CoordinatorC", "CategoriesDataManager"]
 - !private ["15DiscourseClient11CoordinatorC", "CategoriesViewController"]
-- !private ["15DiscourseClient11CoordinatorC", "CategoriesViewModel"]
+- ["15DiscourseClient11CoordinatorC", "CategoriesViewModel"]
 - !private ["15DiscourseClient11CoordinatorC", "NSLocalizedString"]
 - ["15DiscourseClient11CoordinatorC", "UINavigationController"]
 - ["15DiscourseClient11CoordinatorC", ""]
+- ["15DiscourseClient11CoordinatorC", "categoriesViewModel"]
+- ["15DiscourseClient11CoordinatorC", "categoryDataManager"]
 - ["15DiscourseClient11CoordinatorC", "finish"]
 - ["15DiscourseClient11CoordinatorC", "init"]
 - ["15DiscourseClient11CoordinatorC", "presenter"]
@@ -55,6 +67,8 @@ depends-member:
 - !private ["SQ", "CategoriesViewModel"]
 - !private ["SQ", "NSLocalizedString"]
 - ["SQ", ""]
+- !private ["SQ", "categoriesViewModel"]
+- !private ["SQ", "categoryDataManager"]
 - !private ["SQ", "init"]
 - !private ["SQ", "presenter"]
 - !private ["SQ", "pushViewController"]
@@ -91,9 +105,15 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "pushViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "title"]
+- !private ["So20UIScrollViewDelegateP", "init"]
+- !private ["So20UIScrollViewDelegateP", "title"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "pushViewController"]
 - !private ["So16UIStateRestoringP", "title"]
+- !private ["So21UITableViewDataSourceP", "init"]
+- !private ["So21UITableViewDataSourceP", "title"]
+- !private ["So19UITableViewDelegateP", "init"]
+- !private ["So19UITableViewDelegateP", "title"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "pushViewController"]
 - !private ["So18UITraitEnvironmentP", "title"]
@@ -112,6 +132,7 @@ depends-nominal:
 - !private "s7CVarArgP"
 - "15DiscourseClient21CategoriesCoordinatorC"
 - !private "15DiscourseClient24CategoriesViewControllerC"
+- !private "15DiscourseClient22CategoriesViewDelegateP"
 - !private "15DiscourseClient19CategoriesViewModelC"
 - "15DiscourseClient11CoordinatorC"
 - !private "s28CustomDebugStringConvertibleP"
@@ -129,7 +150,10 @@ depends-nominal:
 - !private "So30UIPasteConfigurationSupportingP"
 - !private "So11UIResponderC"
 - !private "So30UIResponderStandardEditActionsP"
+- !private "So20UIScrollViewDelegateP"
 - !private "So16UIStateRestoringP"
+- !private "So21UITableViewDataSourceP"
+- !private "So19UITableViewDelegateP"
 - !private "So18UITraitEnvironmentP"
 - !private "So23UIUserActivityRestoringP"
 - !private "So16UIViewControllerC"
@@ -163,4 +187,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "3cea2421ed2e6050fa060b5f7c774e27"
+interface-hash: "8af4446216cc58374ec0cb34941d8f9a"
