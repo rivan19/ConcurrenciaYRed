@@ -32,7 +32,7 @@ class TopicsViewModel {
     }
 
     func viewWasLoaded() {
-        /** TODO:
+        /** TODO: DONE
          Recuperar el listado de latest topics del dataManager
          Asignar el resultado a la lista de viewModels (que representan celdas de la interfaz
          Avisar a la vista de que ya tenemos topics listos para pintar
@@ -47,16 +47,15 @@ class TopicsViewModel {
                         return
                     }
                     
-                    //guard let topic = topics.topicList.topics  else {
-                    //    return
-                    //}
+                    for topic in topics.topicList.topics {
+                        let topicViewModelAux = TopicCellViewModel(topic: topic)
+                        self.topicViewModels.append(topicViewModelAux)
+                    }
                     
-                    //topicViewModels = TopicCellViewModel(topic: topics.topicList.topics)
                     self.viewDelegate?.topicsFetched()
                     
-                    
-                case .failure(let error):
-                    print(error)
+                case .failure(_):
+                    self?.viewDelegate?.errorFetchingTopics()
                 }
             }
         }
