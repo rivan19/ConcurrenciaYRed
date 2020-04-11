@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AC7A5842441EB8100A59F30 /* RemoveTopicResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC7A5832441EB8100A59F30 /* RemoveTopicResponse.swift */; };
+		4AC7A5862441EBB200A59F30 /* RemoveTopicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC7A5852441EBB200A59F30 /* RemoveTopicRequest.swift */; };
 		62015CB723EF04C200673EBB /* TopicCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62015CB623EF04C200673EBB /* TopicCellViewModel.swift */; };
 		62015CBA23EF084C00673EBB /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62015CB823EF084C00673EBB /* TopicCell.swift */; };
 		62015CBB23EF084C00673EBB /* TopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62015CB923EF084C00673EBB /* TopicCell.xib */; };
@@ -47,6 +49,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4AC7A5832441EB8100A59F30 /* RemoveTopicResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveTopicResponse.swift; sourceTree = "<group>"; };
+		4AC7A5852441EBB200A59F30 /* RemoveTopicRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveTopicRequest.swift; sourceTree = "<group>"; };
 		62015CB623EF04C200673EBB /* TopicCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCellViewModel.swift; sourceTree = "<group>"; };
 		62015CB823EF084C00673EBB /* TopicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
 		62015CB923EF084C00673EBB /* TopicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopicCell.xib; sourceTree = "<group>"; };
@@ -242,6 +246,7 @@
 				62015CC523EF161E00673EBB /* SingleTopicRequest.swift */,
 				62015CD123EF205100673EBB /* CreateTopicRequest.swift */,
 				62A697A223E89BD600CCEA3E /* LatestTopicsRequest.swift */,
+				4AC7A5852441EBB200A59F30 /* RemoveTopicRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 				62A697A523E89C2200CCEA3E /* LatestTopicsResponse.swift */,
 				62015CD323EF21A900673EBB /* AddNewTopicResponse.swift */,
 				62015CC723EF162D00673EBB /* SingleTopicResponse.swift */,
+				4AC7A5832441EB8100A59F30 /* RemoveTopicResponse.swift */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -331,6 +337,8 @@
 				627DC5BE23E5F7A0006D8615 /* Coordinator.swift in Sources */,
 				627DC5C323E5FEE4006D8615 /* TopicsViewModel.swift in Sources */,
 				62015CC023EF0F8100673EBB /* TopicDetailViewModel.swift in Sources */,
+				4AC7A5842441EB8100A59F30 /* RemoveTopicResponse.swift in Sources */,
+				4AC7A5862441EBB200A59F30 /* RemoveTopicRequest.swift in Sources */,
 				62015CC823EF162D00673EBB /* SingleTopicResponse.swift in Sources */,
 				62015CC423EF14FC00673EBB /* TopicDetailDataManager.swift in Sources */,
 				62015CDB23EF301300673EBB /* CategoriesViewModel.swift in Sources */,

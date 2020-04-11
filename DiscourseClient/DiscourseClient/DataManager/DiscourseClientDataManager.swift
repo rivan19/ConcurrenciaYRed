@@ -23,19 +23,23 @@ class DiscourseClientDataManager {
 }
 
 extension DiscourseClientDataManager: TopicsDataManager {
-    func fetchAllTopics(completion: @escaping (Result<LatestTopicsResponse, Error>) -> ()) {
+    func fetchAllTopics(completion: @escaping (Result<LatestTopicsResponse?, Error>) -> ()) {
         remoteDataManager.fetchAllTopics(completion: completion)
     }
 }
 
 extension DiscourseClientDataManager: TopicDetailDataManager {
-    func fetchTopic(id: Int, completion: @escaping (Result<SingleTopicResponse, Error>) -> ()) {
+    func deleteTopic(id: Int, completion: @escaping (Result<RemoveTopicResponse?, Error>) -> ()) {
+        remoteDataManager.deleteTopic(id: id, completion: completion)
+    }
+    
+    func fetchTopic(id: Int, completion: @escaping (Result<SingleTopicResponse?, Error>) -> ()) {
         remoteDataManager.fetchTopic(id: id, completion: completion)
     }
 }
 
 extension DiscourseClientDataManager: AddTopicDataManager {
-    func addTopic(title: String, raw: String, createdAt: String, completion: @escaping (Result<AddNewTopicResponse, Error>) -> ()) {
+    func addTopic(title: String, raw: String, createdAt: String, completion: @escaping (Result<AddNewTopicResponse?, Error>) -> ()) {
         remoteDataManager.addTopic(title: title, raw: raw, createdAt: createdAt, completion: completion)
     }
 }
