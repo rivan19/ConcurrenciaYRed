@@ -39,23 +39,24 @@ class TopicsViewModel {
          */
         
         topicsDataManager.fetchAllTopics {[weak self] (result) in
+            guard let self = self else {
+                return
+            }
             DispatchQueue.main.async {
                 switch result {
                 case .success(let topics):
-                    
-                    guard let self = self else {
-                        return
-                    }
-                    
-                    for topic in topics.topicList.topics {
-                        let topicViewModelAux = TopicCellViewModel(topic: topic)
-                        self.topicViewModels.append(topicViewModelAux)
+                    if let topics = topics {
+                        self.topicViewModels = []
+                        for topic in topics.topicList.topics {
+                            let topicViewModelAux = TopicCellViewModel(topic: topic)
+                            self.topicViewModels.append(topicViewModelAux)
+                        }
                     }
                     
                     self.viewDelegate?.topicsFetched()
                     
                 case .failure(_):
-                    self?.viewDelegate?.errorFetchingTopics()
+                    self.viewDelegate?.errorFetchingTopics()
                 }
             }
         }

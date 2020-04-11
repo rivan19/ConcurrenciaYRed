@@ -49,11 +49,16 @@ class TopicsViewController: UIViewController {
         rightBarButtonItem.tintColor = .black
         navigationItem.rightBarButtonItem = rightBarButtonItem
     }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
         viewModel.viewWasLoaded()
     }
+    
+    /*override func viewDidLoad() {
+        super.viewDidLoad()
+        viewModel.viewWasLoaded()
+    }*/
 
     @objc func plusButtonTapped() {
         viewModel.plusButtonTapped()

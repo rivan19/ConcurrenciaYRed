@@ -9,9 +9,9 @@
 import Foundation
 
 // TODO: Implementar las propiedades de esta request
-struct SingleTopicRequest: APIRequest {
+struct RemoveTopicRequest: APIRequest {
     
-    typealias Response = SingleTopicResponse
+    typealias Response = RemoveTopicResponse
     
     let id: Int
     
@@ -20,7 +20,7 @@ struct SingleTopicRequest: APIRequest {
     }
     
     var method: Method {
-        return .GET
+        return .DELETE
     }
     
     var path: String {

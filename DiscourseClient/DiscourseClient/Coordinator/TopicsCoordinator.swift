@@ -48,6 +48,13 @@ extension TopicsCoordinator: TopicsCoordinatorDelegate {
          Asignar el VC al viewDelegate del VM. De esta forma, el VC se enterará de lo necesario para pintar la UI
          Finalmente, lanzar el TopicDetailViewController sobre el presenter.
          */
+        
+        let topicDetailViewModel = TopicDetailViewModel(topicID: topic.id, topicDetailDataManager: topicDetailDataManager)
+        let topicDetailViewController = TopicDetailViewController(viewModel: topicDetailViewModel)
+        
+        topicDetailViewModel.coordinatorDelegate = self
+        topicDetailViewModel.viewDelegate = topicDetailViewController
+        presenter.pushViewController(topicDetailViewController, animated: true)
     }
 
     func topicsPlusButtonTapped() {
@@ -75,5 +82,10 @@ extension TopicsCoordinator: TopicsCoordinatorDelegate {
 extension TopicsCoordinator: TopicDetailCoordinatorDelegate {
     func topicDetailBackButtonTapped() {
         presenter.popViewController(animated: true)
+    }
+    
+    func topicRemoveButtonTapped() {
+        presenter.popViewController(animated: true)
+        
     }
 }
