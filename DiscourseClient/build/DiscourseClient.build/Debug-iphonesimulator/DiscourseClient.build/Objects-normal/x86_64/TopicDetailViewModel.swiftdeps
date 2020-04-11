@@ -14,8 +14,10 @@ provides-member:
 provides-dynamic-lookup:
 - "backButtonTapped"
 - "coordinatorDelegate"
+- "deleteButtonTapped"
 - "labelTopicIDText"
 - "labelTopicNameText"
+- "labelTopicTitleText"
 - "topicDetailDataManager"
 - "topicID"
 - "viewDelegate"
@@ -23,14 +25,110 @@ provides-dynamic-lookup:
 depends-top-level:
 - "AnyObject"
 - "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "FloatLiteralType"
 - "Int"
+- "IntegerLiteralType"
 - "String"
+- "StringLiteralType"
 - "TopicDetailCoordinatorDelegate"
 - "TopicDetailDataManager"
 - "TopicDetailViewDelegate"
 - "TopicDetailViewModel"
+- "UnicodeScalarType"
 depends-member:
+- !private ["Sa", "subscript"]
+- !private ["SK", "replacingOccurrences"]
+- !private ["SK", "subscript"]
+- !private ["s7CVarArgP", "replacingOccurrences"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["Sl", "replacingOccurrences"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "replacingOccurrences"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "replacingOccurrences"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "replacingOccurrences"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "replacingOccurrences"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
+- !private ["Se", "canDelete"]
+- !private ["Se", "details"]
+- !private ["Se", "id"]
+- !private ["Se", "name"]
+- !private ["Se", "postStream"]
+- !private ["Se", "posts"]
+- !private ["Se", "replacingOccurrences"]
+- !private ["Se", "subscript"]
+- !private ["Se", "topicSlug"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["15DiscourseClient7DetailsV", "canDelete"]
+- !private ["SE", "canDelete"]
+- !private ["SE", "details"]
+- !private ["SE", "id"]
+- !private ["SE", "name"]
+- !private ["SE", "postStream"]
+- !private ["SE", "posts"]
+- !private ["SE", "replacingOccurrences"]
+- !private ["SE", "subscript"]
+- !private ["SE", "topicSlug"]
+- !private ["SQ", "failure"]
+- !private ["SQ", "replacingOccurrences"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "success"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "replacingOccurrences"]
+- !private ["s32ExpressibleByStringInterpolationP", "replacingOccurrences"]
+- !private ["s26ExpressibleByStringLiteralP", "replacingOccurrences"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "replacingOccurrences"]
+- !private ["SH", "failure"]
+- !private ["SH", "replacingOccurrences"]
+- !private ["SH", "subscript"]
+- !private ["SH", "success"]
+- !private ["s25LosslessStringConvertibleP", "replacingOccurrences"]
+- !private ["s10MirrorPathP", "replacingOccurrences"]
+- !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- !private ["So8NSCodingP", "replacingOccurrences"]
+- !private ["So9NSCopyingP", "replacingOccurrences"]
+- !private ["So21NSItemProviderReadingP", "replacingOccurrences"]
+- !private ["So21NSItemProviderWritingP", "replacingOccurrences"]
+- !private ["So16NSMutableCopyingP", "replacingOccurrences"]
+- !private ["So8NSObjectC", "replacingOccurrences"]
+- !private ["So8NSObjectP", "replacingOccurrences"]
+- !private ["So14NSSecureCodingP", "replacingOccurrences"]
+- !private ["So8NSStringC", "replacingOccurrences"]
+- !private ["15DiscourseClient4PostV", "id"]
+- !private ["15DiscourseClient4PostV", "name"]
+- !private ["15DiscourseClient4PostV", "topicSlug"]
+- !private ["15DiscourseClient5PostsV", "posts"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "replacingOccurrences"]
+- !private ["Sm", "subscript"]
+- !private ["s6ResultO", "failure"]
+- !private ["s6ResultO", "success"]
+- !private ["ST", "replacingOccurrences"]
+- !private ["ST", "subscript"]
+- !private ["15DiscourseClient19SingleTopicResponseV", "details"]
+- !private ["15DiscourseClient19SingleTopicResponseV", "postStream"]
+- !private ["SS", "replacingOccurrences"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["Sy", "replacingOccurrences"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "replacingOccurrences"]
+- !private ["s20TextOutputStreamableP", "replacingOccurrences"]
 - ["15DiscourseClient30TopicDetailCoordinatorDelegateP", "topicDetailBackButtonTapped"]
+- ["15DiscourseClient30TopicDetailCoordinatorDelegateP", "topicRemoveButtonTapped"]
+- !private ["15DiscourseClient22TopicDetailDataManagerP", "deleteTopic"]
+- !private ["15DiscourseClient22TopicDetailDataManagerP", "fetchTopic"]
+- ["15DiscourseClient23TopicDetailViewDelegateP", "Bool"]
 - ["15DiscourseClient23TopicDetailViewDelegateP", "errorFetchingTopicDetail"]
 - ["15DiscourseClient23TopicDetailViewDelegateP", "topicDetailFetched"]
 - ["15DiscourseClient20TopicDetailViewModelC", "Int"]
@@ -41,17 +139,91 @@ depends-member:
 - ["15DiscourseClient20TopicDetailViewModelC", "backButtonTapped"]
 - ["15DiscourseClient20TopicDetailViewModelC", "coordinatorDelegate"]
 - ["15DiscourseClient20TopicDetailViewModelC", "deinit"]
+- ["15DiscourseClient20TopicDetailViewModelC", "deleteButtonTapped"]
 - ["15DiscourseClient20TopicDetailViewModelC", "init"]
 - ["15DiscourseClient20TopicDetailViewModelC", "labelTopicIDText"]
 - ["15DiscourseClient20TopicDetailViewModelC", "labelTopicNameText"]
+- ["15DiscourseClient20TopicDetailViewModelC", "labelTopicTitleText"]
 - ["15DiscourseClient20TopicDetailViewModelC", "topicDetailDataManager"]
 - ["15DiscourseClient20TopicDetailViewModelC", "topicID"]
 - ["15DiscourseClient20TopicDetailViewModelC", "viewDelegate"]
 - ["15DiscourseClient20TopicDetailViewModelC", "viewDidLoad"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "replacingOccurrences"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "replacingOccurrences"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "replacingOccurrences"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "replacingOccurrences"]
+- !private ["s19_HasContiguousBytesP", "replacingOccurrences"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "replacingOccurrences"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "replacingOccurrences"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "replacingOccurrences"]
+- !private ["s21_ObjectiveCBridgeableP", "replacingOccurrences"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
 depends-nominal:
+- !private "Sa"
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "15DiscourseClient7DetailsV"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "15DiscourseClient4PostV"
+- !private "15DiscourseClient5PostsV"
+- !private "Sk"
+- !private "Sm"
+- !private "s6ResultO"
+- !private "ST"
+- !private "15DiscourseClient19SingleTopicResponseV"
+- !private "SS"
+- !private "s27StringInterpolationProtocolP"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
 - "15DiscourseClient30TopicDetailCoordinatorDelegateP"
+- !private "15DiscourseClient22TopicDetailDataManagerP"
 - "15DiscourseClient23TopicDetailViewDelegateP"
 - "15DiscourseClient20TopicDetailViewModelC"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
@@ -80,4 +252,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "ab52558a2ac0f23717b111fab48793ed"
+interface-hash: "0b530dbb41fe87e86d59826e5bbecbb8"

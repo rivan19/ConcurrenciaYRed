@@ -28,10 +28,10 @@ depends-top-level:
 - "AnyObject"
 - "AssignmentPrecedence"
 - !private "DispatchQueue"
-- !private "FloatLiteralType"
+- "FloatLiteralType"
 - "IndexPath"
 - "Int"
-- !private "IntegerLiteralType"
+- "IntegerLiteralType"
 - "Topic"
 - "TopicCellViewModel"
 - "TopicsCoordinatorDelegate"
@@ -81,7 +81,6 @@ depends-member:
 - !private ["Se", "count"]
 - !private ["Se", "row"]
 - !private ["Se", "subscript"]
-- !private ["Se", "topic"]
 - !private ["Se", "topicList"]
 - !private ["Se", "topics"]
 - !private ["So18OS_dispatch_objectC", "async"]
@@ -91,7 +90,6 @@ depends-member:
 - !private ["SE", "count"]
 - !private ["SE", "row"]
 - !private ["SE", "subscript"]
-- !private ["SE", "topic"]
 - !private ["SE", "topicList"]
 - !private ["SE", "topics"]
 - !private ["SQ", "async"]
@@ -144,7 +142,8 @@ depends-member:
 - !private ["ST", "row"]
 - !private ["ST", "subscript"]
 - !private ["ST", "topic"]
-- !private ["15DiscourseClient5TopicV", "topic"]
+- !private ["15DiscourseClient18TopicCellViewModelC", "init"]
+- !private ["15DiscourseClient18TopicCellViewModelC", "topic"]
 - !private ["15DiscourseClient9TopicListV", "topics"]
 - ["15DiscourseClient25TopicsCoordinatorDelegateP", "Topic"]
 - ["15DiscourseClient25TopicsCoordinatorDelegateP", "didSelect"]
@@ -155,7 +154,6 @@ depends-member:
 - !private ["15DiscourseClient15TopicsViewModelC", "DispatchQueue"]
 - ["15DiscourseClient15TopicsViewModelC", "IndexPath"]
 - ["15DiscourseClient15TopicsViewModelC", "Int"]
-- ["15DiscourseClient15TopicsViewModelC", "Topic"]
 - ["15DiscourseClient15TopicsViewModelC", "TopicCellViewModel"]
 - ["15DiscourseClient15TopicsViewModelC", "TopicsCoordinatorDelegate"]
 - ["15DiscourseClient15TopicsViewModelC", "TopicsDataManager"]
@@ -223,7 +221,7 @@ depends-nominal:
 - !private "s6ResultO"
 - !private "7Combine9SchedulerP"
 - !private "ST"
-- !private "15DiscourseClient5TopicV"
+- !private "15DiscourseClient18TopicCellViewModelC"
 - !private "15DiscourseClient9TopicListV"
 - "15DiscourseClient25TopicsCoordinatorDelegateP"
 - !private "15DiscourseClient17TopicsDataManagerP"
@@ -264,4 +262,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "4d52f755f257ede3b0357ced642f902f"
+interface-hash: "f5f21e4b15504dacdf91d191598bc4c0"

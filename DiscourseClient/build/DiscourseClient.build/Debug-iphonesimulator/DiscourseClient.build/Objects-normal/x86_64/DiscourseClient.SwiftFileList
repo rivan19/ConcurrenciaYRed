@@ -2,6 +2,8 @@
 /Users/rillopis/Developer/Projects/Xcode/Cursos/Concurrencia\ y\ Red/ConcurrenciaYRed/DiscourseClient/DiscourseClient/Coordinator/Coordinator.swift
 /Users/rillopis/Developer/Projects/Xcode/Cursos/Concurrencia\ y\ Red/ConcurrenciaYRed/DiscourseClient/DiscourseClient/Topics/TopicsViewModel.swift
 /Users/rillopis/Developer/Projects/Xcode/Cursos/Concurrencia\ y\ Red/ConcurrenciaYRed/DiscourseClient/DiscourseClient/TopicDetail/TopicDetailViewModel.swift
+/Users/rillopis/Developer/Projects/Xcode/Cursos/Concurrencia\ y\ Red/ConcurrenciaYRed/DiscourseClient/DiscourseClient/Model/Responses/RemoveTopicResponse.swift
+/Users/rillopis/Developer/Projects/Xcode/Cursos/Concurrencia\ y\ Red/ConcurrenciaYRed/DiscourseClient/DiscourseClient/Model/Requests/RemoveTopicRequest.swift
 /Users/rillopis/Developer/Projects/Xcode/Cursos/Concurrencia\ y\ Red/ConcurrenciaYRed/DiscourseClient/DiscourseClient/Model/Responses/SingleTopicResponse.swift
 /Users/rillopis/Developer/Projects/Xcode/Cursos/Concurrencia\ y\ Red/ConcurrenciaYRed/DiscourseClient/DiscourseClient/TopicDetail/TopicDetailDataManager.swift
 /Users/rillopis/Developer/Projects/Xcode/Cursos/Concurrencia\ y\ Red/ConcurrenciaYRed/DiscourseClient/DiscourseClient/Categories/CategoriesViewModel.swift

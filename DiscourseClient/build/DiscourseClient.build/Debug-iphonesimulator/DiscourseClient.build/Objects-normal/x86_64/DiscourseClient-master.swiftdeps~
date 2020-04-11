@@ -1,10 +1,10 @@
 version: "Apple Swift version 5.2 (swiftlang-1103.0.32.1 clang-1103.0.32.29)"
 options: "01f64404e0829381bf8be716074a1d2a"
-build_time: [1586560224, 146431000]
+build_time: [1586560694, 883989000]
 inputs:
   "/Users/rillopis/Developer/Projects/Xcode/Cursos/Concurrencia y Red/ConcurrenciaYRed/DiscourseClient/DiscourseClient/Model/Requests/LatestTopicsRequest.swift": [1584056134, 0]
   "/Users/rillopis/Developer/Projects/Xcode/Cursos/Concurrencia y Red/ConcurrenciaYRed/DiscourseClient/DiscourseClient/Coordinator/Coordinator.swift": [1584056134, 0]
-  "/Users/rillopis/Developer/Projects/Xcode/Cursos/Concurrencia y Red/ConcurrenciaYRed/DiscourseClient/DiscourseClient/Topics/TopicsViewModel.swift": !dirty [1586560224, 49014755]
+  "/Users/rillopis/Developer/Projects/Xcode/Cursos/Concurrencia y Red/ConcurrenciaYRed/DiscourseClient/DiscourseClient/Topics/TopicsViewModel.swift": !dirty [1586560694, 667552855]
   "/Users/rillopis/Developer/Projects/Xcode/Cursos/Concurrencia y Red/ConcurrenciaYRed/DiscourseClient/DiscourseClient/TopicDetail/TopicDetailViewModel.swift": [1584056134, 0]
   "/Users/rillopis/Developer/Projects/Xcode/Cursos/Concurrencia y Red/ConcurrenciaYRed/DiscourseClient/DiscourseClient/Model/Responses/SingleTopicResponse.swift": [1584056134, 0]
   "/Users/rillopis/Developer/Projects/Xcode/Cursos/Concurrencia y Red/ConcurrenciaYRed/DiscourseClient/DiscourseClient/TopicDetail/TopicDetailDataManager.swift": [1584056134, 0]

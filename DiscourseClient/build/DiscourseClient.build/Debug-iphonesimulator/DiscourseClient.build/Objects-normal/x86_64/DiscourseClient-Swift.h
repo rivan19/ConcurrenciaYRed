@@ -271,6 +271,7 @@ SWIFT_CLASS("_TtC15DiscourseClient25TopicDetailViewController")
 - (void)loadView;
 - (void)viewDidLoad;
 - (void)backButtonTapped;
+- (void)deleteButtonTapped;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
@@ -282,7 +283,7 @@ SWIFT_CLASS("_TtC15DiscourseClient20TopicsViewController")
 @interface TopicsViewController : UIViewController
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)loadView;
-- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 - (void)plusButtonTapped;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
