@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		4AC7A5842441EB8100A59F30 /* RemoveTopicResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC7A5832441EB8100A59F30 /* RemoveTopicResponse.swift */; };
 		4AC7A5862441EBB200A59F30 /* RemoveTopicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC7A5852441EBB200A59F30 /* RemoveTopicRequest.swift */; };
+		4AC7A58924431D7500A59F30 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC7A58824431D7500A59F30 /* UserDetailViewModel.swift */; };
+		4AC7A58B24431D8900A59F30 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC7A58A24431D8900A59F30 /* UserDetailViewController.swift */; };
+		4AC7A58D24431D9900A59F30 /* UserDetailDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC7A58C24431D9900A59F30 /* UserDetailDataManager.swift */; };
+		4AC7A58F24431E0200A59F30 /* SingleUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC7A58E24431E0200A59F30 /* SingleUserRequest.swift */; };
+		4AC7A59124431E2A00A59F30 /* SingleUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC7A59024431E2A00A59F30 /* SingleUserResponse.swift */; };
+		4AC7A593244323BB00A59F30 /* EditSingleUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC7A592244323BB00A59F30 /* EditSingleUserRequest.swift */; };
+		4AC7A5952443243400A59F30 /* EditSingleUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC7A5942443243400A59F30 /* EditSingleUserResponse.swift */; };
 		62015CB723EF04C200673EBB /* TopicCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62015CB623EF04C200673EBB /* TopicCellViewModel.swift */; };
 		62015CBA23EF084C00673EBB /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62015CB823EF084C00673EBB /* TopicCell.swift */; };
 		62015CBB23EF084C00673EBB /* TopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62015CB923EF084C00673EBB /* TopicCell.xib */; };
@@ -66,6 +73,13 @@
 /* Begin PBXFileReference section */
 		4AC7A5832441EB8100A59F30 /* RemoveTopicResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveTopicResponse.swift; sourceTree = "<group>"; };
 		4AC7A5852441EBB200A59F30 /* RemoveTopicRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveTopicRequest.swift; sourceTree = "<group>"; };
+		4AC7A58824431D7500A59F30 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
+		4AC7A58A24431D8900A59F30 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		4AC7A58C24431D9900A59F30 /* UserDetailDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailDataManager.swift; sourceTree = "<group>"; };
+		4AC7A58E24431E0200A59F30 /* SingleUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleUserRequest.swift; sourceTree = "<group>"; };
+		4AC7A59024431E2A00A59F30 /* SingleUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleUserResponse.swift; sourceTree = "<group>"; };
+		4AC7A592244323BB00A59F30 /* EditSingleUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSingleUserRequest.swift; sourceTree = "<group>"; };
+		4AC7A5942443243400A59F30 /* EditSingleUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSingleUserResponse.swift; sourceTree = "<group>"; };
 		62015CB623EF04C200673EBB /* TopicCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCellViewModel.swift; sourceTree = "<group>"; };
 		62015CB823EF084C00673EBB /* TopicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
 		62015CB923EF084C00673EBB /* TopicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopicCell.xib; sourceTree = "<group>"; };
@@ -133,6 +147,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AC7A58724431D4400A59F30 /* UserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4AC7A58824431D7500A59F30 /* UserDetailViewModel.swift */,
+				4AC7A58A24431D8900A59F30 /* UserDetailViewController.swift */,
+				4AC7A58C24431D9900A59F30 /* UserDetailDataManager.swift */,
+			);
+			path = UserDetail;
+			sourceTree = "<group>";
+		};
 		62015CBE23EF0F6C00673EBB /* TopicDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +221,7 @@
 				627DC5C923E603A9006D8615 /* Model */,
 				627DC5C623E6036F006D8615 /* DataManager */,
 				D53C898B24427B2E000A31AD /* Users */,
+				4AC7A58724431D4400A59F30 /* UserDetail */,
 				627DC5C123E5FED6006D8615 /* Topics */,
 				62015CBE23EF0F6C00673EBB /* TopicDetail */,
 				62015CCC23EF1F4200673EBB /* AddTopic */,
@@ -285,6 +310,8 @@
 				4AC7A5852441EBB200A59F30 /* RemoveTopicRequest.swift */,
 				D53C897924426025000A31AD /* CategoriesRequest.swift */,
 				D53C898724427847000A31AD /* UserRequest.swift */,
+				4AC7A58E24431E0200A59F30 /* SingleUserRequest.swift */,
+				4AC7A592244323BB00A59F30 /* EditSingleUserRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -298,6 +325,8 @@
 				4AC7A5832441EB8100A59F30 /* RemoveTopicResponse.swift */,
 				D53C897B24426065000A31AD /* CategoriesResponse.swift */,
 				D53C898524427687000A31AD /* UsersResponse.swift */,
+				4AC7A59024431E2A00A59F30 /* SingleUserResponse.swift */,
+				4AC7A5942443243400A59F30 /* EditSingleUserResponse.swift */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -397,19 +426,25 @@
 				4AC7A5842441EB8100A59F30 /* RemoveTopicResponse.swift in Sources */,
 				4AC7A5862441EBB200A59F30 /* RemoveTopicRequest.swift in Sources */,
 				D53C899424427E4D000A31AD /* UserCell.swift in Sources */,
+				4AC7A58D24431D9900A59F30 /* UserDetailDataManager.swift in Sources */,
 				62015CC823EF162D00673EBB /* SingleTopicResponse.swift in Sources */,
 				D53C898D24427B6B000A31AD /* UsersDataManager.swift in Sources */,
 				62015CC423EF14FC00673EBB /* TopicDetailDataManager.swift in Sources */,
 				62015CDB23EF301300673EBB /* CategoriesViewModel.swift in Sources */,
 				D53C8982244263EA000A31AD /* CategoryCellModel.swift in Sources */,
+				4AC7A59124431E2A00A59F30 /* SingleUserResponse.swift in Sources */,
 				62015CBD23EF0C6700673EBB /* TopicsCoordinator.swift in Sources */,
 				62A697A623E89C2200CCEA3E /* LatestTopicsResponse.swift in Sources */,
 				627DC5CF23E604D2006D8615 /* DiscourseClientRemoteDataManager.swift in Sources */,
+				4AC7A58B24431D8900A59F30 /* UserDetailViewController.swift in Sources */,
 				D53C899724429F73000A31AD /* UsersViewController.swift in Sources */,
 				627DC5C523E5FEFD006D8615 /* TopicsViewController.swift in Sources */,
+				4AC7A58F24431E0200A59F30 /* SingleUserRequest.swift in Sources */,
+				4AC7A593244323BB00A59F30 /* EditSingleUserRequest.swift in Sources */,
 				627DC5D323E605E5006D8615 /* DiscourseClientRemoteDataManagerImpl.swift in Sources */,
 				62015CBA23EF084C00673EBB /* TopicCell.swift in Sources */,
 				62015CCB23EF19F500673EBB /* UIViewController+Extensions.swift in Sources */,
+				4AC7A58924431D7500A59F30 /* UserDetailViewModel.swift in Sources */,
 				D53C898824427847000A31AD /* UserRequest.swift in Sources */,
 				D53C899124427E30000A31AD /* UserCellViewModel.swift in Sources */,
 				D53C897C24426065000A31AD /* CategoriesResponse.swift in Sources */,
@@ -435,6 +470,7 @@
 				62015CB723EF04C200673EBB /* TopicCellViewModel.swift in Sources */,
 				627DC5D823E60727006D8615 /* SessionAPI.swift in Sources */,
 				627DC5D123E604E7006D8615 /* DiscourseClientLocalDataManager.swift in Sources */,
+				4AC7A5952443243400A59F30 /* EditSingleUserResponse.swift in Sources */,
 				627DC5AB23E5F580006D8615 /* SceneDelegate.swift in Sources */,
 				627DC5CD23E6048A006D8615 /* DiscourseClientDataManager.swift in Sources */,
 			);

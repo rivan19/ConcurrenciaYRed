@@ -46,7 +46,8 @@ class TopicDetailViewModel {
                         if let topic = topic {
                             self.labelTopicIDText = "\(topic.postStream.posts[0].id)"
                             self.labelTopicNameText = topic.postStream.posts[0].name
-                            self.labelTopicTitleText = topic.postStream.posts[0].topicSlug.replacingOccurrences(of: "-", with: " ")
+                            self.labelTopicTitleText = topic.postStream.posts[0].cooked.replacingOccurrences(of: "<p>", with: "").replacingOccurrences(of: "</p>", with: "")
+                            
                             self.viewDelegate?.topicDetailFetched(delete: topic.details.canDelete)
                         }
                         else {

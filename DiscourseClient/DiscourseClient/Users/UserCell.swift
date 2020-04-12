@@ -19,7 +19,7 @@ class UserCell: UITableViewCell {
                 if let photo = viewModel.imageString {
                     let formatURL = photo.replacingOccurrences(of: "{size}", with: "100")
                     
-                    let url = URL(string: formatURL)
+                    let url = URL(string: apiURL + formatURL)
                     if let urlFormated = url {
                         if let data = try? Data(contentsOf: urlFormated) {
                             let image = UIImage(data: data)
