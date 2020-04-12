@@ -8,10 +8,12 @@ provides-member:
 provides-dynamic-lookup:
 - "addTopic"
 - "deleteTopic"
+- "editUserName"
 - "fetchAllCategories"
 - "fetchAllTopics"
 - "fetchAllUsers"
 - "fetchTopic"
+- "fetchUser"
 - "session"
 depends-top-level:
 - "AddNewTopicResponse"
@@ -21,6 +23,8 @@ depends-top-level:
 - !private "CreateTopicRequest"
 - "DiscourseClientRemoteDataManager"
 - "DiscourseClientRemoteDataManagerImpl"
+- !private "EditSingleUserRequest"
+- "EditSingleUserResponse"
 - "Error"
 - "Int"
 - !private "LatestTopicsRequest"
@@ -31,6 +35,8 @@ depends-top-level:
 - "SessionAPI"
 - !private "SingleTopicRequest"
 - "SingleTopicResponse"
+- !private "SingleUserRequest"
+- "SingleUserResponse"
 - "String"
 - !private "UserRequest"
 - "UsersResponse"
@@ -42,22 +48,28 @@ depends-member:
 - !private ["15DiscourseClient18CreateTopicRequestV", "init"]
 - !private ["15DiscourseClient0aB17RemoteDataManagerP", "CategoriesRequest"]
 - !private ["15DiscourseClient0aB17RemoteDataManagerP", "CreateTopicRequest"]
+- !private ["15DiscourseClient0aB17RemoteDataManagerP", "EditSingleUserRequest"]
 - !private ["15DiscourseClient0aB17RemoteDataManagerP", "LatestTopicsRequest"]
 - !private ["15DiscourseClient0aB17RemoteDataManagerP", "RemoveTopicRequest"]
 - !private ["15DiscourseClient0aB17RemoteDataManagerP", "SingleTopicRequest"]
+- !private ["15DiscourseClient0aB17RemoteDataManagerP", "SingleUserRequest"]
 - !private ["15DiscourseClient0aB17RemoteDataManagerP", "UserRequest"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", ""]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "addTopic"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "deleteTopic"]
+- ["15DiscourseClient0aB17RemoteDataManagerP", "editUserName"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "fetchAllCategories"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "fetchAllTopics"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "fetchAllUsers"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "fetchTopic"]
+- ["15DiscourseClient0aB17RemoteDataManagerP", "fetchUser"]
 - !private ["15DiscourseClient0aB17RemoteDataManagerP", "session"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "AddNewTopicResponse"]
 - !private ["15DiscourseClient0aB21RemoteDataManagerImplC", "CategoriesRequest"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "CategoriesResponse"]
 - !private ["15DiscourseClient0aB21RemoteDataManagerImplC", "CreateTopicRequest"]
+- !private ["15DiscourseClient0aB21RemoteDataManagerImplC", "EditSingleUserRequest"]
+- ["15DiscourseClient0aB21RemoteDataManagerImplC", "EditSingleUserResponse"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "Error"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "Int"]
 - !private ["15DiscourseClient0aB21RemoteDataManagerImplC", "LatestTopicsRequest"]
@@ -68,18 +80,24 @@ depends-member:
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "SessionAPI"]
 - !private ["15DiscourseClient0aB21RemoteDataManagerImplC", "SingleTopicRequest"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "SingleTopicResponse"]
+- !private ["15DiscourseClient0aB21RemoteDataManagerImplC", "SingleUserRequest"]
+- ["15DiscourseClient0aB21RemoteDataManagerImplC", "SingleUserResponse"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "String"]
 - !private ["15DiscourseClient0aB21RemoteDataManagerImplC", "UserRequest"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "UsersResponse"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "addTopic"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "deinit"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "deleteTopic"]
+- ["15DiscourseClient0aB21RemoteDataManagerImplC", "editUserName"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "fetchAllCategories"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "fetchAllTopics"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "fetchAllUsers"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "fetchTopic"]
+- ["15DiscourseClient0aB21RemoteDataManagerImplC", "fetchUser"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "init"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "session"]
+- !private ["15DiscourseClient21EditSingleUserRequestV", "deinit"]
+- !private ["15DiscourseClient21EditSingleUserRequestV", "init"]
 - !private ["15DiscourseClient19LatestTopicsRequestV", "deinit"]
 - !private ["15DiscourseClient19LatestTopicsRequestV", "init"]
 - !private ["15DiscourseClient18RemoveTopicRequestV", "deinit"]
@@ -87,6 +105,8 @@ depends-member:
 - !private ["15DiscourseClient10SessionAPIC", "send"]
 - !private ["15DiscourseClient18SingleTopicRequestV", "deinit"]
 - !private ["15DiscourseClient18SingleTopicRequestV", "init"]
+- !private ["15DiscourseClient17SingleUserRequestV", "deinit"]
+- !private ["15DiscourseClient17SingleUserRequestV", "init"]
 - !private ["15DiscourseClient11UserRequestV", "deinit"]
 - !private ["15DiscourseClient11UserRequestV", "init"]
 depends-nominal:
@@ -95,10 +115,12 @@ depends-nominal:
 - !private "15DiscourseClient18CreateTopicRequestV"
 - "15DiscourseClient0aB17RemoteDataManagerP"
 - "15DiscourseClient0aB21RemoteDataManagerImplC"
+- !private "15DiscourseClient21EditSingleUserRequestV"
 - !private "15DiscourseClient19LatestTopicsRequestV"
 - !private "15DiscourseClient18RemoveTopicRequestV"
 - !private "15DiscourseClient10SessionAPIC"
 - !private "15DiscourseClient18SingleTopicRequestV"
+- !private "15DiscourseClient17SingleUserRequestV"
 - !private "15DiscourseClient11UserRequestV"
 depends-dynamic-lookup:
 depends-external:
@@ -128,4 +150,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "428accbd1a8222de777290bf1e0867be"
+interface-hash: "6b12ffc35dfa8f85370a9d948edcaead"

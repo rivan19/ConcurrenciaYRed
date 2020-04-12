@@ -50,15 +50,15 @@ class TopicsViewController: UIViewController {
         navigationItem.rightBarButtonItem = rightBarButtonItem
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    /*override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         viewModel.viewWasLoaded()
-    }
+    }*/
     
-    /*override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.viewWasLoaded()
-    }*/
+    }
 
     @objc func plusButtonTapped() {
         viewModel.plusButtonTapped()

@@ -44,10 +44,15 @@ class UsersViewController: UIViewController {
         ])
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
+    override func viewDidLoad() {
+        super.viewDidLoad()
         viewModel.viewWasLoaded()
     }
+    
+    /*override func view(_ animated: Bool) {
+        super.viewDidAppear(true)
+        viewModel.viewWasLoaded()
+    }*/
     
     fileprivate func showErrorFetchingUsersAlert() {
         let alertMessage: String = NSLocalizedString("Error fetching topics\nPlease try again later", comment: "")

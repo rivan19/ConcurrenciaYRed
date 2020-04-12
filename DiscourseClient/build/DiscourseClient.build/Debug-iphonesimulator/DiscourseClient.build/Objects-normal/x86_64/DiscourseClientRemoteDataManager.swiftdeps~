@@ -31,10 +31,7 @@ depends-member:
 - ["15DiscourseClient0aB17RemoteDataManagerP", "UsersResponse"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "addTopic"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "deleteTopic"]
-<<<<<<< HEAD
-=======
 - ["15DiscourseClient0aB17RemoteDataManagerP", "fetchAllCategories"]
->>>>>>> develop
 - ["15DiscourseClient0aB17RemoteDataManagerP", "fetchAllTopics"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "fetchAllUsers"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "fetchTopic"]
@@ -68,8 +65,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-<<<<<<< HEAD
-interface-hash: "432313f60906ea20cfc8bfc520c0e4e3"
-=======
 interface-hash: "875db89be8cbe6e6e85b2f6af5f7ee85"
->>>>>>> develop

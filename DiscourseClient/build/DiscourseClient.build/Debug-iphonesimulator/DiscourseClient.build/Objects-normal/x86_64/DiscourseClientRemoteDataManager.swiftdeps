@@ -10,31 +10,37 @@ depends-top-level:
 - "AddNewTopicResponse"
 - "CategoriesResponse"
 - "DiscourseClientRemoteDataManager"
+- "EditSingleUserResponse"
 - "Error"
 - "Int"
 - "LatestTopicsResponse"
 - "RemoveTopicResponse"
 - "Result"
 - "SingleTopicResponse"
+- "SingleUserResponse"
 - "String"
 - "UsersResponse"
 depends-member:
 - ["15DiscourseClient0aB17RemoteDataManagerP", "AddNewTopicResponse"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "CategoriesResponse"]
+- ["15DiscourseClient0aB17RemoteDataManagerP", "EditSingleUserResponse"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "Error"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "Int"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "LatestTopicsResponse"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "RemoveTopicResponse"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "Result"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "SingleTopicResponse"]
+- ["15DiscourseClient0aB17RemoteDataManagerP", "SingleUserResponse"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "String"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "UsersResponse"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "addTopic"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "deleteTopic"]
+- ["15DiscourseClient0aB17RemoteDataManagerP", "editUserName"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "fetchAllCategories"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "fetchAllTopics"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "fetchAllUsers"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "fetchTopic"]
+- ["15DiscourseClient0aB17RemoteDataManagerP", "fetchUser"]
 depends-nominal:
 - "15DiscourseClient0aB17RemoteDataManagerP"
 depends-dynamic-lookup:
@@ -65,4 +71,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "875db89be8cbe6e6e85b2f6af5f7ee85"
+interface-hash: "ca4993de1119abfd72a7ab4b7a824b14"

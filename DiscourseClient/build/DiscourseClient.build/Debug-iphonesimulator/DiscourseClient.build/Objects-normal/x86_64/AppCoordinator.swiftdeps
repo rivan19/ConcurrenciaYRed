@@ -382,6 +382,9 @@ depends-member:
 - !private ["So16UIViewControllerC", "viewControllers"]
 - !private ["So8UIWindowC", "makeKeyAndVisible"]
 - !private ["So8UIWindowC", "rootViewController"]
+- !private ["15DiscourseClient29UserDetailCoordinatorDelegateP", "init"]
+- !private ["15DiscourseClient29UserDetailCoordinatorDelegateP", "start"]
+- ["15DiscourseClient21UserDetailDataManagerP", "init"]
 - !private ["15DiscourseClient16UsersCoordinatorC", "init"]
 - !private ["15DiscourseClient16UsersCoordinatorC", "start"]
 - !private ["15DiscourseClient24UsersCoordinatorDelegateP", "init"]
@@ -503,6 +506,8 @@ depends-nominal:
 - !private "So6UIViewC"
 - !private "So16UIViewControllerC"
 - !private "So8UIWindowC"
+- !private "15DiscourseClient29UserDetailCoordinatorDelegateP"
+- "15DiscourseClient21UserDetailDataManagerP"
 - !private "15DiscourseClient16UsersCoordinatorC"
 - !private "15DiscourseClient24UsersCoordinatorDelegateP"
 - "15DiscourseClient16UsersDataManagerP"

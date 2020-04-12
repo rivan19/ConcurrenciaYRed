@@ -8,10 +8,7 @@ provides-member:
 provides-dynamic-lookup:
 - "addTopic"
 - "deleteTopic"
-<<<<<<< HEAD
-=======
 - "fetchAllCategories"
->>>>>>> develop
 - "fetchAllTopics"
 - "fetchAllUsers"
 - "fetchTopic"
@@ -41,10 +38,7 @@ depends-member:
 - ["15DiscourseClient19AddTopicDataManagerP", ""]
 - ["15DiscourseClient19AddTopicDataManagerP", "addTopic"]
 - ["15DiscourseClient19AddTopicDataManagerP", "deleteTopic"]
-<<<<<<< HEAD
-=======
 - ["15DiscourseClient19AddTopicDataManagerP", "fetchAllCategories"]
->>>>>>> develop
 - ["15DiscourseClient19AddTopicDataManagerP", "fetchAllTopics"]
 - ["15DiscourseClient19AddTopicDataManagerP", "fetchAllUsers"]
 - ["15DiscourseClient19AddTopicDataManagerP", "fetchTopic"]
@@ -74,10 +68,7 @@ depends-member:
 - ["15DiscourseClient0aB11DataManagerC", "addTopic"]
 - ["15DiscourseClient0aB11DataManagerC", "deinit"]
 - ["15DiscourseClient0aB11DataManagerC", "deleteTopic"]
-<<<<<<< HEAD
-=======
 - ["15DiscourseClient0aB11DataManagerC", "fetchAllCategories"]
->>>>>>> develop
 - ["15DiscourseClient0aB11DataManagerC", "fetchAllTopics"]
 - ["15DiscourseClient0aB11DataManagerC", "fetchAllUsers"]
 - ["15DiscourseClient0aB11DataManagerC", "fetchTopic"]
@@ -86,20 +77,14 @@ depends-member:
 - ["15DiscourseClient0aB11DataManagerC", "remoteDataManager"]
 - !private ["15DiscourseClient0aB17RemoteDataManagerP", "addTopic"]
 - !private ["15DiscourseClient0aB17RemoteDataManagerP", "deleteTopic"]
-<<<<<<< HEAD
-=======
 - !private ["15DiscourseClient0aB17RemoteDataManagerP", "fetchAllCategories"]
->>>>>>> develop
 - !private ["15DiscourseClient0aB17RemoteDataManagerP", "fetchAllTopics"]
 - !private ["15DiscourseClient0aB17RemoteDataManagerP", "fetchAllUsers"]
 - !private ["15DiscourseClient0aB17RemoteDataManagerP", "fetchTopic"]
 - ["15DiscourseClient22TopicDetailDataManagerP", ""]
 - ["15DiscourseClient22TopicDetailDataManagerP", "addTopic"]
 - ["15DiscourseClient22TopicDetailDataManagerP", "deleteTopic"]
-<<<<<<< HEAD
-=======
 - ["15DiscourseClient22TopicDetailDataManagerP", "fetchAllCategories"]
->>>>>>> develop
 - ["15DiscourseClient22TopicDetailDataManagerP", "fetchAllTopics"]
 - ["15DiscourseClient22TopicDetailDataManagerP", "fetchAllUsers"]
 - ["15DiscourseClient22TopicDetailDataManagerP", "fetchTopic"]
@@ -108,10 +93,7 @@ depends-member:
 - ["15DiscourseClient17TopicsDataManagerP", ""]
 - ["15DiscourseClient17TopicsDataManagerP", "addTopic"]
 - ["15DiscourseClient17TopicsDataManagerP", "deleteTopic"]
-<<<<<<< HEAD
-=======
 - ["15DiscourseClient17TopicsDataManagerP", "fetchAllCategories"]
->>>>>>> develop
 - ["15DiscourseClient17TopicsDataManagerP", "fetchAllTopics"]
 - ["15DiscourseClient17TopicsDataManagerP", "fetchAllUsers"]
 - ["15DiscourseClient17TopicsDataManagerP", "fetchTopic"]
@@ -162,8 +144,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-<<<<<<< HEAD
-interface-hash: "5b82299365cfc7a2fdd108b7dea8b981"
-=======
 interface-hash: "b1d8595a0cd3bb44492b563604eeb730"
->>>>>>> develop

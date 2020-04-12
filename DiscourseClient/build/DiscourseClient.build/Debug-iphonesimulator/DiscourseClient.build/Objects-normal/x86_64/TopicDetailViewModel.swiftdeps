@@ -37,7 +37,6 @@ depends-top-level:
 - "TopicDetailDataManager"
 - "TopicDetailViewDelegate"
 - "TopicDetailViewModel"
-- "UnicodeScalarType"
 depends-member:
 - !private ["Sa", "subscript"]
 - !private ["SK", "replacingOccurrences"]
@@ -64,6 +63,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["10Foundation12DataProtocolP", "subscript"]
 - !private ["Se", "canDelete"]
+- !private ["Se", "cooked"]
 - !private ["Se", "details"]
 - !private ["Se", "id"]
 - !private ["Se", "name"]
@@ -71,7 +71,6 @@ depends-member:
 - !private ["Se", "posts"]
 - !private ["Se", "replacingOccurrences"]
 - !private ["Se", "subscript"]
-- !private ["Se", "topicSlug"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["15DiscourseClient7DetailsV", "canDelete"]
@@ -80,6 +79,7 @@ depends-member:
 - !private ["So17OS_dispatch_queueC", "async"]
 - !private ["So17OS_dispatch_queueC", "main"]
 - !private ["SE", "canDelete"]
+- !private ["SE", "cooked"]
 - !private ["SE", "details"]
 - !private ["SE", "id"]
 - !private ["SE", "name"]
@@ -87,7 +87,6 @@ depends-member:
 - !private ["SE", "posts"]
 - !private ["SE", "replacingOccurrences"]
 - !private ["SE", "subscript"]
-- !private ["SE", "topicSlug"]
 - !private ["SQ", "async"]
 - !private ["SQ", "failure"]
 - !private ["SQ", "main"]
@@ -124,9 +123,9 @@ depends-member:
 - !private ["So8NSStringC", "replacingOccurrences"]
 - !private ["So9OS_objectC", "async"]
 - !private ["So9OS_objectC", "main"]
+- !private ["15DiscourseClient4PostV", "cooked"]
 - !private ["15DiscourseClient4PostV", "id"]
 - !private ["15DiscourseClient4PostV", "name"]
-- !private ["15DiscourseClient4PostV", "topicSlug"]
 - !private ["15DiscourseClient5PostsV", "posts"]
 - !private ["Sk", "subscript"]
 - !private ["Sm", "replacingOccurrences"]

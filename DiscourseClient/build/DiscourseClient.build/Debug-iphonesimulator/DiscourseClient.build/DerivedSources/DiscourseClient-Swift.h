@@ -237,7 +237,7 @@ SWIFT_CLASS("_TtC15DiscourseClient24CategoriesViewController")
 @interface CategoriesViewController : UIViewController
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)loadView;
-- (void)viewDidAppear:(BOOL)animated;
+- (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
@@ -307,7 +307,7 @@ SWIFT_CLASS("_TtC15DiscourseClient20TopicsViewController")
 @interface TopicsViewController : UIViewController
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)loadView;
-- (void)viewDidAppear:(BOOL)animated;
+- (void)viewDidLoad;
 - (void)plusButtonTapped;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
@@ -336,11 +336,24 @@ SWIFT_CLASS("_TtC15DiscourseClient8UserCell")
 @end
 
 
+SWIFT_CLASS("_TtC15DiscourseClient24UserDetailViewController")
+@interface UserDetailViewController : UIViewController
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)loadView;
+- (void)viewDidLoad;
+- (void)backButtonTapped;
+- (void)editButtonTapped;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
+
+
+
 SWIFT_CLASS("_TtC15DiscourseClient19UsersViewController")
 @interface UsersViewController : UIViewController
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)loadView;
-- (void)viewDidAppear:(BOOL)animated;
+- (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 

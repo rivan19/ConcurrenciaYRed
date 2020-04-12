@@ -13,11 +13,10 @@ provides-dynamic-lookup:
 - "numberOfSections"
 - "showErrorFetchingCategoriesAlert"
 - "tableView"
-- "viewDidAppear"
+- "viewDidLoad"
 - "viewModel"
 depends-top-level:
 - "AssignmentPrecedence"
-- "Bool"
 - "BooleanLiteralType"
 - "CastingPrecedence"
 - "CategoriesViewController"
@@ -116,7 +115,6 @@ depends-member:
 - ["s7CVarArgP", "viewForZoomingInScrollView"]
 - !private ["s7CVarArgP", "viewModel"]
 - !private ["15DiscourseClient24CategoriesViewControllerC", "$__lazy_storage_$_tableView"]
-- ["15DiscourseClient24CategoriesViewControllerC", "Bool"]
 - ["15DiscourseClient24CategoriesViewControllerC", "CategoriesViewModel"]
 - !private ["15DiscourseClient24CategoriesViewControllerC", "CategoryCell"]
 - ["15DiscourseClient24CategoriesViewControllerC", "IndexPath"]
@@ -159,7 +157,7 @@ depends-member:
 - ["15DiscourseClient24CategoriesViewControllerC", "tableView"]
 - ["15DiscourseClient24CategoriesViewControllerC", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["15DiscourseClient24CategoriesViewControllerC", "view"]
-- ["15DiscourseClient24CategoriesViewControllerC", "viewDidAppear"]
+- ["15DiscourseClient24CategoriesViewControllerC", "viewDidLoad"]
 - ["15DiscourseClient24CategoriesViewControllerC", "viewForZooming"]
 - ["15DiscourseClient24CategoriesViewControllerC", "viewForZoomingInScrollView"]
 - ["15DiscourseClient24CategoriesViewControllerC", "viewModel"]
@@ -549,7 +547,6 @@ depends-member:
 - !private ["So19NSLayoutXAxisAnchorC", "constraint"]
 - !private ["So19NSLayoutYAxisAnchorC", "constraint"]
 - ["So8NSObjectC", "$__lazy_storage_$_tableView"]
-- ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "CategoriesViewModel"]
 - !private ["So8NSObjectC", "CategoryCell"]
 - ["So8NSObjectC", "IndexPath"]
@@ -608,7 +605,8 @@ depends-member:
 - !private ["So8NSObjectC", "topAnchor"]
 - ["So8NSObjectC", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So8NSObjectC", "view"]
-- ["So8NSObjectC", "viewDidAppear"]
+- !private ["So8NSObjectC", "viewDidAppear"]
+- ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
 - ["So8NSObjectC", "viewModel"]
@@ -1023,7 +1021,6 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewModel"]
 - ["So11UIResponderC", "$__lazy_storage_$_tableView"]
-- ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "CategoriesViewModel"]
 - !private ["So11UIResponderC", "CategoryCell"]
 - ["So11UIResponderC", "IndexPath"]
@@ -1080,7 +1077,8 @@ depends-member:
 - !private ["So11UIResponderC", "topAnchor"]
 - ["So11UIResponderC", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So11UIResponderC", "view"]
-- ["So11UIResponderC", "viewDidAppear"]
+- !private ["So11UIResponderC", "viewDidAppear"]
+- ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewForZooming"]
 - ["So11UIResponderC", "viewForZoomingInScrollView"]
 - ["So11UIResponderC", "viewModel"]
@@ -1453,7 +1451,6 @@ depends-member:
 - ["So6UIViewC", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So6UIViewC", "viewModel"]
 - ["So16UIViewControllerC", "$__lazy_storage_$_tableView"]
-- ["So16UIViewControllerC", "Bool"]
 - ["So16UIViewControllerC", "CategoriesViewModel"]
 - !private ["So16UIViewControllerC", "CategoryCell"]
 - ["So16UIViewControllerC", "IndexPath"]
@@ -1496,7 +1493,8 @@ depends-member:
 - ["So16UIViewControllerC", "tableView"]
 - ["So16UIViewControllerC", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["So16UIViewControllerC", "view"]
-- ["So16UIViewControllerC", "viewDidAppear"]
+- !private ["So16UIViewControllerC", "viewDidAppear"]
+- ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "viewForZooming"]
 - ["So16UIViewControllerC", "viewForZoomingInScrollView"]
 - ["So16UIViewControllerC", "viewModel"]
@@ -1724,4 +1722,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "bccbda5635986ef98ff3b9fc3d82a9cd"
+interface-hash: "b9935b91c26385c684b4695bf8d7046c"

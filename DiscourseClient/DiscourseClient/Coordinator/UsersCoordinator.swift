@@ -51,7 +51,7 @@ extension UsersCoordinator: UsersCoordinatorDelegate {
 extension UsersCoordinator: UserDetailCoordinatorDelegate {
     func updateUserButtonTapped() {
         presenter.popViewController(animated: true)
-        //self.start()
+        self.start()
     }
     
     func userDetailBackButtonTapped(){

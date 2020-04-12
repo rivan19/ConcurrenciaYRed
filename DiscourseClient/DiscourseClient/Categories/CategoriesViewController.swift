@@ -46,7 +46,7 @@ class CategoriesViewController: UIViewController {
         
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewDidLoad() {
         super.viewDidAppear(true)
         viewModel.viewWasLoaded()
     }

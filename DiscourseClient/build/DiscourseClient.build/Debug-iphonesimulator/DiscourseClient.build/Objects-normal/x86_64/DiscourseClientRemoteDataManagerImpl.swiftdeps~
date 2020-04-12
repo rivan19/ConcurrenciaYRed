@@ -8,10 +8,7 @@ provides-member:
 provides-dynamic-lookup:
 - "addTopic"
 - "deleteTopic"
-<<<<<<< HEAD
-=======
 - "fetchAllCategories"
->>>>>>> develop
 - "fetchAllTopics"
 - "fetchAllUsers"
 - "fetchTopic"
@@ -52,10 +49,7 @@ depends-member:
 - ["15DiscourseClient0aB17RemoteDataManagerP", ""]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "addTopic"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "deleteTopic"]
-<<<<<<< HEAD
-=======
 - ["15DiscourseClient0aB17RemoteDataManagerP", "fetchAllCategories"]
->>>>>>> develop
 - ["15DiscourseClient0aB17RemoteDataManagerP", "fetchAllTopics"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "fetchAllUsers"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "fetchTopic"]
@@ -80,10 +74,7 @@ depends-member:
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "addTopic"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "deinit"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "deleteTopic"]
-<<<<<<< HEAD
-=======
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "fetchAllCategories"]
->>>>>>> develop
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "fetchAllTopics"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "fetchAllUsers"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "fetchTopic"]
@@ -137,8 +128,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-<<<<<<< HEAD
-interface-hash: "ae55dd6ef5aaac6c0847f0f248d3ace6"
-=======
 interface-hash: "428accbd1a8222de777290bf1e0867be"
->>>>>>> develop
