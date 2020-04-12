@@ -60,6 +60,7 @@
 		D53C899124427E30000A31AD /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53C899024427E30000A31AD /* UserCellViewModel.swift */; };
 		D53C899424427E4D000A31AD /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53C899224427E4D000A31AD /* UserCell.swift */; };
 		D53C899524427E4D000A31AD /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D53C899324427E4D000A31AD /* UserCell.xib */; };
+		D53C899724429F73000A31AD /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53C899624429F73000A31AD /* UsersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +119,7 @@
 		D53C899024427E30000A31AD /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
 		D53C899224427E4D000A31AD /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		D53C899324427E4D000A31AD /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		D53C899624429F73000A31AD /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,6 +310,7 @@
 				D53C899024427E30000A31AD /* UserCellViewModel.swift */,
 				D53C899224427E4D000A31AD /* UserCell.swift */,
 				D53C899324427E4D000A31AD /* UserCell.xib */,
+				D53C899624429F73000A31AD /* UsersViewController.swift */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				62015CBD23EF0C6700673EBB /* TopicsCoordinator.swift in Sources */,
 				62A697A623E89C2200CCEA3E /* LatestTopicsResponse.swift in Sources */,
 				627DC5CF23E604D2006D8615 /* DiscourseClientRemoteDataManager.swift in Sources */,
+				D53C899724429F73000A31AD /* UsersViewController.swift in Sources */,
 				627DC5C523E5FEFD006D8615 /* TopicsViewController.swift in Sources */,
 				627DC5D323E605E5006D8615 /* DiscourseClientRemoteDataManagerImpl.swift in Sources */,
 				62015CBA23EF084C00673EBB /* TopicCell.swift in Sources */,

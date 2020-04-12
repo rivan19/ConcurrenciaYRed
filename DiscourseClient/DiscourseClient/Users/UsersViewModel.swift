@@ -8,6 +8,9 @@
 
 import Foundation
 
+protocol UsersCoordinatorDelegate: class {
+    func didSelect(user: User)
+}
 
 protocol UsersViewDelegate: class {
     func usersFetched()
@@ -15,6 +18,7 @@ protocol UsersViewDelegate: class {
 }
 
 class UsersViewModel {
+    weak var coordinatorDelegate: UsersCoordinatorDelegate?
     weak var viewDelegate: UsersViewDelegate?
     let usersDataManager: UsersDataManager
     var userViewModels: [UserCellViewModel] = []
@@ -25,7 +29,27 @@ class UsersViewModel {
     }
     
     func viewWasLoaded(){
-        
+        usersDataManager.fetchAllUsers { [weak self] (result) in
+            guard let self = self else {
+                return
+            }
+            
+            switch result {
+            case .success(let users):
+                if let users = users {
+                    self.userViewModels = []
+                    for user in users.directoryItems {
+                        let userViewModelAux = UserCellViewModel(user: user.user)
+                        self.userViewModels.append(userViewModelAux)
+                    }
+                    
+                    self.viewDelegate?.usersFetched()
+                }
+                
+            case .failure(_):
+                self.viewDelegate?.errorFetchingUsers()
+            }
+        }
     }
     
     func numberOfSections() -> Int {
@@ -45,6 +69,7 @@ class UsersViewModel {
     
     func didSelectRow(at indexPath: IndexPath) {
         guard indexPath.row < userViewModels.count else { return }
+        coordinatorDelegate?.didSelect(user: userViewModels[indexPath.row].user)
         
     }
 }

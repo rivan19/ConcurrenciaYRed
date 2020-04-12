@@ -22,16 +22,16 @@ struct DirectoryItem: Codable {
 }
 
 struct User: Codable {
-    let id: Int
-    let userName: String
-    let avatarTemplate: String
-    let name: String
+    let id: Int?
+    let userName: String?
+    let name: String?
+    let avatarTemplate: String?
     
     enum CodindKeys: String, CodingKey {
         case id
         case userName = "username"
-        case avatarTemplate = "avatar_template"
         case name = "name"
+        case avatarTemplate = "avatar_template"
     }
 }
 
