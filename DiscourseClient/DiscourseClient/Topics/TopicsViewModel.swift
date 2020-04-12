@@ -86,5 +86,6 @@ class TopicsViewModel {
 
     func newTopicWasCreated() {
         // TODO: Seguramente debamos recuperar de nuevo los topics del datamanager, y pintarlos de nuevo
+        viewWasLoaded()
     }
 }
