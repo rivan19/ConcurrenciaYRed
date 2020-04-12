@@ -40,21 +40,24 @@ class TopicDetailViewModel {
             guard let self = self else {
                 return
             }
-            switch result {
-                case .success(let topic):
-                    if let topic = topic {
-                        self.labelTopicIDText = "\(topic.postStream.posts[0].id)"
-                        self.labelTopicNameText = topic.postStream.posts[0].name
-                        self.labelTopicTitleText = topic.postStream.posts[0].topicSlug.replacingOccurrences(of: "-", with: " ")
-                        self.viewDelegate?.topicDetailFetched(delete: topic.details.canDelete)
-                    }
-                    else {
-                        self.viewDelegate?.topicDetailFetched(delete: false)
-                    }
-                
-                case .failure(_):
-                    self.viewDelegate?.errorFetchingTopicDetail()
+            DispatchQueue.main.async {
+                switch result {
+                    case .success(let topic):
+                        if let topic = topic {
+                            self.labelTopicIDText = "\(topic.postStream.posts[0].id)"
+                            self.labelTopicNameText = topic.postStream.posts[0].name
+                            self.labelTopicTitleText = topic.postStream.posts[0].topicSlug.replacingOccurrences(of: "-", with: " ")
+                            self.viewDelegate?.topicDetailFetched(delete: topic.details.canDelete)
+                        }
+                        else {
+                            self.viewDelegate?.topicDetailFetched(delete: false)
+                        }
+                    
+                    case .failure(_):
+                        self.viewDelegate?.errorFetchingTopicDetail()
+                }
             }
+            
         }
     }
 
@@ -69,13 +72,15 @@ class TopicDetailViewModel {
             guard let self = self else {
                 return
             }
-            
-            switch result {
-                case .success(_):
-                    self.coordinatorDelegate?.topicRemoveButtonTapped()
-                case .failure(_):
-                    self.viewDelegate?.errorFetchingTopicDetail()
+            DispatchQueue.main.async {
+                switch result {
+                    case .success(_):
+                        self.coordinatorDelegate?.topicRemoveButtonTapped()
+                    case .failure(_):
+                        self.viewDelegate?.errorFetchingTopicDetail()
+                }
             }
+            
         }
     }
 }

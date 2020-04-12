@@ -10,6 +10,7 @@ import Foundation
 
 /// Implementación por defecto del protocolo remoto, en este caso usando SessionAPI
 class DiscourseClientRemoteDataManagerImpl: DiscourseClientRemoteDataManager {
+    
     let session: SessionAPI
 
     init(session: SessionAPI) {
@@ -43,4 +44,21 @@ class DiscourseClientRemoteDataManagerImpl: DiscourseClientRemoteDataManager {
             completion(result)
         }
     }
+    
+    func fetchAllCategories(completion: @escaping (Result<CategoriesResponse?, Error>) -> ()) {
+        let request = CategoriesRequest()
+        session.send(request: request) { (result) in
+            completion(result)
+        }
+    }
+    
+    func fetchAllUsers(completion: @escaping (Result<UsersResponse?, Error>) -> ()) {
+        let request = UserRequest()
+        session.send(request: request) { (result) in
+            completion(result)
+        }
+    }
+    
+    
+    
 }

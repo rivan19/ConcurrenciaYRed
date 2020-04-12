@@ -8,7 +8,9 @@ provides-member:
 provides-dynamic-lookup:
 - "addTopic"
 - "deleteTopic"
+- "fetchAllCategories"
 - "fetchAllTopics"
+- "fetchAllUsers"
 - "fetchTopic"
 - "localDataManager"
 - "remoteDataManager"
@@ -16,6 +18,8 @@ depends-top-level:
 - "AddNewTopicResponse"
 - "AddTopicDataManager"
 - "AssignmentPrecedence"
+- "CategoriesDataManager"
+- "CategoriesResponse"
 - "DiscourseClientDataManager"
 - "DiscourseClientLocalDataManager"
 - "DiscourseClientRemoteDataManager"
@@ -28,15 +32,29 @@ depends-top-level:
 - "String"
 - "TopicDetailDataManager"
 - "TopicsDataManager"
+- "UsersDataManager"
+- "UsersResponse"
 depends-member:
 - ["15DiscourseClient19AddTopicDataManagerP", ""]
 - ["15DiscourseClient19AddTopicDataManagerP", "addTopic"]
 - ["15DiscourseClient19AddTopicDataManagerP", "deleteTopic"]
+- ["15DiscourseClient19AddTopicDataManagerP", "fetchAllCategories"]
 - ["15DiscourseClient19AddTopicDataManagerP", "fetchAllTopics"]
+- ["15DiscourseClient19AddTopicDataManagerP", "fetchAllUsers"]
 - ["15DiscourseClient19AddTopicDataManagerP", "fetchTopic"]
 - !private ["15DiscourseClient19AddTopicDataManagerP", "localDataManager"]
 - !private ["15DiscourseClient19AddTopicDataManagerP", "remoteDataManager"]
+- ["15DiscourseClient21CategoriesDataManagerP", ""]
+- ["15DiscourseClient21CategoriesDataManagerP", "addTopic"]
+- ["15DiscourseClient21CategoriesDataManagerP", "deleteTopic"]
+- ["15DiscourseClient21CategoriesDataManagerP", "fetchAllCategories"]
+- ["15DiscourseClient21CategoriesDataManagerP", "fetchAllTopics"]
+- ["15DiscourseClient21CategoriesDataManagerP", "fetchAllUsers"]
+- ["15DiscourseClient21CategoriesDataManagerP", "fetchTopic"]
+- !private ["15DiscourseClient21CategoriesDataManagerP", "localDataManager"]
+- !private ["15DiscourseClient21CategoriesDataManagerP", "remoteDataManager"]
 - ["15DiscourseClient0aB11DataManagerC", "AddNewTopicResponse"]
+- ["15DiscourseClient0aB11DataManagerC", "CategoriesResponse"]
 - ["15DiscourseClient0aB11DataManagerC", "DiscourseClientLocalDataManager"]
 - ["15DiscourseClient0aB11DataManagerC", "DiscourseClientRemoteDataManager"]
 - ["15DiscourseClient0aB11DataManagerC", "Error"]
@@ -46,38 +64,58 @@ depends-member:
 - ["15DiscourseClient0aB11DataManagerC", "Result"]
 - ["15DiscourseClient0aB11DataManagerC", "SingleTopicResponse"]
 - ["15DiscourseClient0aB11DataManagerC", "String"]
+- ["15DiscourseClient0aB11DataManagerC", "UsersResponse"]
 - ["15DiscourseClient0aB11DataManagerC", "addTopic"]
 - ["15DiscourseClient0aB11DataManagerC", "deinit"]
 - ["15DiscourseClient0aB11DataManagerC", "deleteTopic"]
+- ["15DiscourseClient0aB11DataManagerC", "fetchAllCategories"]
 - ["15DiscourseClient0aB11DataManagerC", "fetchAllTopics"]
+- ["15DiscourseClient0aB11DataManagerC", "fetchAllUsers"]
 - ["15DiscourseClient0aB11DataManagerC", "fetchTopic"]
 - ["15DiscourseClient0aB11DataManagerC", "init"]
 - ["15DiscourseClient0aB11DataManagerC", "localDataManager"]
 - ["15DiscourseClient0aB11DataManagerC", "remoteDataManager"]
 - !private ["15DiscourseClient0aB17RemoteDataManagerP", "addTopic"]
 - !private ["15DiscourseClient0aB17RemoteDataManagerP", "deleteTopic"]
+- !private ["15DiscourseClient0aB17RemoteDataManagerP", "fetchAllCategories"]
 - !private ["15DiscourseClient0aB17RemoteDataManagerP", "fetchAllTopics"]
+- !private ["15DiscourseClient0aB17RemoteDataManagerP", "fetchAllUsers"]
 - !private ["15DiscourseClient0aB17RemoteDataManagerP", "fetchTopic"]
 - ["15DiscourseClient22TopicDetailDataManagerP", ""]
 - ["15DiscourseClient22TopicDetailDataManagerP", "addTopic"]
 - ["15DiscourseClient22TopicDetailDataManagerP", "deleteTopic"]
+- ["15DiscourseClient22TopicDetailDataManagerP", "fetchAllCategories"]
 - ["15DiscourseClient22TopicDetailDataManagerP", "fetchAllTopics"]
+- ["15DiscourseClient22TopicDetailDataManagerP", "fetchAllUsers"]
 - ["15DiscourseClient22TopicDetailDataManagerP", "fetchTopic"]
 - !private ["15DiscourseClient22TopicDetailDataManagerP", "localDataManager"]
 - !private ["15DiscourseClient22TopicDetailDataManagerP", "remoteDataManager"]
 - ["15DiscourseClient17TopicsDataManagerP", ""]
 - ["15DiscourseClient17TopicsDataManagerP", "addTopic"]
 - ["15DiscourseClient17TopicsDataManagerP", "deleteTopic"]
+- ["15DiscourseClient17TopicsDataManagerP", "fetchAllCategories"]
 - ["15DiscourseClient17TopicsDataManagerP", "fetchAllTopics"]
+- ["15DiscourseClient17TopicsDataManagerP", "fetchAllUsers"]
 - ["15DiscourseClient17TopicsDataManagerP", "fetchTopic"]
 - !private ["15DiscourseClient17TopicsDataManagerP", "localDataManager"]
 - !private ["15DiscourseClient17TopicsDataManagerP", "remoteDataManager"]
+- ["15DiscourseClient16UsersDataManagerP", ""]
+- ["15DiscourseClient16UsersDataManagerP", "addTopic"]
+- ["15DiscourseClient16UsersDataManagerP", "deleteTopic"]
+- ["15DiscourseClient16UsersDataManagerP", "fetchAllCategories"]
+- ["15DiscourseClient16UsersDataManagerP", "fetchAllTopics"]
+- ["15DiscourseClient16UsersDataManagerP", "fetchAllUsers"]
+- ["15DiscourseClient16UsersDataManagerP", "fetchTopic"]
+- !private ["15DiscourseClient16UsersDataManagerP", "localDataManager"]
+- !private ["15DiscourseClient16UsersDataManagerP", "remoteDataManager"]
 depends-nominal:
 - "15DiscourseClient19AddTopicDataManagerP"
+- "15DiscourseClient21CategoriesDataManagerP"
 - "15DiscourseClient0aB11DataManagerC"
 - !private "15DiscourseClient0aB17RemoteDataManagerP"
 - "15DiscourseClient22TopicDetailDataManagerP"
 - "15DiscourseClient17TopicsDataManagerP"
+- "15DiscourseClient16UsersDataManagerP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
@@ -106,4 +144,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5b82299365cfc7a2fdd108b7dea8b981"
+interface-hash: "b1d8595a0cd3bb44492b563604eeb730"

@@ -8,12 +8,19 @@ provides-member:
 provides-dynamic-lookup:
 - "addTopic"
 - "deleteTopic"
+<<<<<<< HEAD
+=======
+- "fetchAllCategories"
+>>>>>>> develop
 - "fetchAllTopics"
+- "fetchAllUsers"
 - "fetchTopic"
 - "session"
 depends-top-level:
 - "AddNewTopicResponse"
 - "AssignmentPrecedence"
+- !private "CategoriesRequest"
+- "CategoriesResponse"
 - !private "CreateTopicRequest"
 - "DiscourseClientRemoteDataManager"
 - "DiscourseClientRemoteDataManagerImpl"
@@ -28,21 +35,34 @@ depends-top-level:
 - !private "SingleTopicRequest"
 - "SingleTopicResponse"
 - "String"
+- !private "UserRequest"
+- "UsersResponse"
 depends-member:
 - !private ["15DiscourseClient10APIRequestP", "init"]
+- !private ["15DiscourseClient17CategoriesRequestV", "deinit"]
+- !private ["15DiscourseClient17CategoriesRequestV", "init"]
 - !private ["15DiscourseClient18CreateTopicRequestV", "deinit"]
 - !private ["15DiscourseClient18CreateTopicRequestV", "init"]
+- !private ["15DiscourseClient0aB17RemoteDataManagerP", "CategoriesRequest"]
 - !private ["15DiscourseClient0aB17RemoteDataManagerP", "CreateTopicRequest"]
 - !private ["15DiscourseClient0aB17RemoteDataManagerP", "LatestTopicsRequest"]
 - !private ["15DiscourseClient0aB17RemoteDataManagerP", "RemoveTopicRequest"]
 - !private ["15DiscourseClient0aB17RemoteDataManagerP", "SingleTopicRequest"]
+- !private ["15DiscourseClient0aB17RemoteDataManagerP", "UserRequest"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", ""]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "addTopic"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "deleteTopic"]
+<<<<<<< HEAD
+=======
+- ["15DiscourseClient0aB17RemoteDataManagerP", "fetchAllCategories"]
+>>>>>>> develop
 - ["15DiscourseClient0aB17RemoteDataManagerP", "fetchAllTopics"]
+- ["15DiscourseClient0aB17RemoteDataManagerP", "fetchAllUsers"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "fetchTopic"]
 - !private ["15DiscourseClient0aB17RemoteDataManagerP", "session"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "AddNewTopicResponse"]
+- !private ["15DiscourseClient0aB21RemoteDataManagerImplC", "CategoriesRequest"]
+- ["15DiscourseClient0aB21RemoteDataManagerImplC", "CategoriesResponse"]
 - !private ["15DiscourseClient0aB21RemoteDataManagerImplC", "CreateTopicRequest"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "Error"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "Int"]
@@ -55,10 +75,17 @@ depends-member:
 - !private ["15DiscourseClient0aB21RemoteDataManagerImplC", "SingleTopicRequest"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "SingleTopicResponse"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "String"]
+- !private ["15DiscourseClient0aB21RemoteDataManagerImplC", "UserRequest"]
+- ["15DiscourseClient0aB21RemoteDataManagerImplC", "UsersResponse"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "addTopic"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "deinit"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "deleteTopic"]
+<<<<<<< HEAD
+=======
+- ["15DiscourseClient0aB21RemoteDataManagerImplC", "fetchAllCategories"]
+>>>>>>> develop
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "fetchAllTopics"]
+- ["15DiscourseClient0aB21RemoteDataManagerImplC", "fetchAllUsers"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "fetchTopic"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "init"]
 - ["15DiscourseClient0aB21RemoteDataManagerImplC", "session"]
@@ -69,8 +96,11 @@ depends-member:
 - !private ["15DiscourseClient10SessionAPIC", "send"]
 - !private ["15DiscourseClient18SingleTopicRequestV", "deinit"]
 - !private ["15DiscourseClient18SingleTopicRequestV", "init"]
+- !private ["15DiscourseClient11UserRequestV", "deinit"]
+- !private ["15DiscourseClient11UserRequestV", "init"]
 depends-nominal:
 - !private "15DiscourseClient10APIRequestP"
+- !private "15DiscourseClient17CategoriesRequestV"
 - !private "15DiscourseClient18CreateTopicRequestV"
 - "15DiscourseClient0aB17RemoteDataManagerP"
 - "15DiscourseClient0aB21RemoteDataManagerImplC"
@@ -78,6 +108,7 @@ depends-nominal:
 - !private "15DiscourseClient18RemoveTopicRequestV"
 - !private "15DiscourseClient10SessionAPIC"
 - !private "15DiscourseClient18SingleTopicRequestV"
+- !private "15DiscourseClient11UserRequestV"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
@@ -106,4 +137,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+<<<<<<< HEAD
 interface-hash: "ae55dd6ef5aaac6c0847f0f248d3ace6"
+=======
+interface-hash: "428accbd1a8222de777290bf1e0867be"
+>>>>>>> develop

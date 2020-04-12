@@ -1,18 +1,224 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "CategoriesViewDelegate"
 - "CategoriesViewModel"
 provides-nominal:
+- "15DiscourseClient22CategoriesViewDelegateP"
 - "15DiscourseClient19CategoriesViewModelC"
 provides-member:
+- ["15DiscourseClient22CategoriesViewDelegateP", ""]
 - ["15DiscourseClient19CategoriesViewModelC", ""]
 provides-dynamic-lookup:
+- "categoriesDataManager"
+- "categoryViewModels"
+- "numberOfRows"
+- "numberOfSections"
+- "viewDelegate"
+- "viewModel"
+- "viewWasLoaded"
 depends-top-level:
+- !private "<"
+- "AnyObject"
+- "AssignmentPrecedence"
+- "CategoriesDataManager"
+- "CategoriesViewDelegate"
 - "CategoriesViewModel"
+- "CategoryCellModel"
+- !private "DispatchQueue"
+- !private "FloatLiteralType"
+- "IndexPath"
+- "Int"
+- !private "IntegerLiteralType"
 depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
+- !private ["Sa", "subscript"]
+- !private ["SK", "append"]
+- !private ["SK", "count"]
+- !private ["SK", "row"]
+- !private ["SK", "subscript"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "async"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["15DiscourseClient21CategoriesDataManagerP", "fetchAllCategories"]
+- !private ["15DiscourseClient18CategoriesResponseV", "categoryList"]
+- ["15DiscourseClient22CategoriesViewDelegateP", "categoriesFetched"]
+- ["15DiscourseClient22CategoriesViewDelegateP", "errorFetchingCategories"]
+- ["15DiscourseClient19CategoriesViewModelC", "CategoriesDataManager"]
+- ["15DiscourseClient19CategoriesViewModelC", "CategoriesViewDelegate"]
+- ["15DiscourseClient19CategoriesViewModelC", "CategoryCellModel"]
+- !private ["15DiscourseClient19CategoriesViewModelC", "DispatchQueue"]
+- ["15DiscourseClient19CategoriesViewModelC", "IndexPath"]
+- ["15DiscourseClient19CategoriesViewModelC", "Int"]
+- ["15DiscourseClient19CategoriesViewModelC", "categoriesDataManager"]
+- ["15DiscourseClient19CategoriesViewModelC", "categoryViewModels"]
 - ["15DiscourseClient19CategoriesViewModelC", "deinit"]
 - ["15DiscourseClient19CategoriesViewModelC", "init"]
+- ["15DiscourseClient19CategoriesViewModelC", "numberOfRows"]
+- ["15DiscourseClient19CategoriesViewModelC", "numberOfSections"]
+- ["15DiscourseClient19CategoriesViewModelC", "viewDelegate"]
+- ["15DiscourseClient19CategoriesViewModelC", "viewModel"]
+- ["15DiscourseClient19CategoriesViewModelC", "viewWasLoaded"]
+- !private ["15DiscourseClient17CategoryCellModelC", "init"]
+- !private ["15DiscourseClient12CategoryListV", "categories"]
+- !private ["Sl", "append"]
+- !private ["Sl", "count"]
+- !private ["Sl", "row"]
+- !private ["Sl", "subscript"]
+- !private ["SL", "row"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "async"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "row"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "row"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "async"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "row"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "count"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
+- !private ["Se", "append"]
+- !private ["Se", "categories"]
+- !private ["Se", "categoryList"]
+- !private ["Se", "count"]
+- !private ["Se", "row"]
+- !private ["Se", "subscript"]
+- !private ["So18OS_dispatch_objectC", "async"]
+- !private ["So18OS_dispatch_objectC", "main"]
+- !private ["So17OS_dispatch_queueC", "async"]
+- !private ["So17OS_dispatch_queueC", "main"]
+- !private ["SE", "append"]
+- !private ["SE", "categories"]
+- !private ["SE", "categoryList"]
+- !private ["SE", "count"]
+- !private ["SE", "row"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "append"]
+- !private ["SQ", "async"]
+- !private ["SQ", "count"]
+- !private ["SQ", "failure"]
+- !private ["SQ", "main"]
+- !private ["SQ", "row"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "success"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "row"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["SH", "append"]
+- !private ["SH", "async"]
+- !private ["SH", "count"]
+- !private ["SH", "failure"]
+- !private ["SH", "main"]
+- !private ["SH", "row"]
+- !private ["SH", "subscript"]
+- !private ["SH", "success"]
+- !private ["10Foundation9IndexPathV", "row"]
+- !private ["SM", "append"]
+- !private ["SM", "count"]
+- !private ["SM", "row"]
+- !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- !private ["So8NSObjectC", "async"]
+- !private ["So8NSObjectC", "main"]
+- !private ["So8NSObjectP", "async"]
+- !private ["So8NSObjectP", "main"]
+- !private ["So9OS_objectC", "async"]
+- !private ["So9OS_objectC", "main"]
+- !private ["Sk", "append"]
+- !private ["Sk", "count"]
+- !private ["Sk", "row"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "append"]
+- !private ["Sm", "count"]
+- !private ["Sm", "subscript"]
+- !private ["10Foundation20ReferenceConvertibleP", "row"]
+- !private ["s6ResultO", "failure"]
+- !private ["s6ResultO", "success"]
+- !private ["7Combine9SchedulerP", "async"]
+- !private ["7Combine9SchedulerP", "main"]
+- !private ["ST", "append"]
+- !private ["ST", "count"]
+- !private ["ST", "row"]
+- !private ["ST", "subscript"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "async"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "row"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
 depends-nominal:
+- !private "Sa"
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "15DiscourseClient21CategoriesDataManagerP"
+- !private "15DiscourseClient18CategoriesResponseV"
+- "15DiscourseClient22CategoriesViewDelegateP"
 - "15DiscourseClient19CategoriesViewModelC"
+- !private "15DiscourseClient17CategoryCellModelC"
+- !private "15DiscourseClient12CategoryListV"
+- !private "Sl"
+- !private "SL"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "So18OS_dispatch_objectC"
+- !private "So17OS_dispatch_queueC"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "SH"
+- !private "10Foundation9IndexPathV"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So9OS_objectC"
+- !private "Sk"
+- !private "Sm"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "s6ResultO"
+- !private "7Combine9SchedulerP"
+- !private "ST"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
@@ -41,4 +247,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "97de03bdbe5550f76f3f43c291c5de2d"
+interface-hash: "4a3d266095947b93b71c3c705aa82cdb"

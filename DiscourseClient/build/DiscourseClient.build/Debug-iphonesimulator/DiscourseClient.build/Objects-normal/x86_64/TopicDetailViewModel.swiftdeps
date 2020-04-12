@@ -27,6 +27,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "Bool"
 - "BooleanLiteralType"
+- !private "DispatchQueue"
 - "FloatLiteralType"
 - "Int"
 - "IntegerLiteralType"
@@ -41,18 +42,24 @@ depends-member:
 - !private ["Sa", "subscript"]
 - !private ["SK", "replacingOccurrences"]
 - !private ["SK", "subscript"]
+- !private ["s7CVarArgP", "async"]
+- !private ["s7CVarArgP", "main"]
 - !private ["s7CVarArgP", "replacingOccurrences"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["Sl", "replacingOccurrences"]
 - !private ["Sl", "subscript"]
 - !private ["SL", "replacingOccurrences"]
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "async"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
 - !private ["s28CustomDebugStringConvertibleP", "replacingOccurrences"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s17CustomReflectableP", "replacingOccurrences"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
 - !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "async"]
+- !private ["s23CustomStringConvertibleP", "main"]
 - !private ["s23CustomStringConvertibleP", "replacingOccurrences"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["10Foundation12DataProtocolP", "subscript"]
@@ -68,6 +75,10 @@ depends-member:
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["15DiscourseClient7DetailsV", "canDelete"]
+- !private ["So18OS_dispatch_objectC", "async"]
+- !private ["So18OS_dispatch_objectC", "main"]
+- !private ["So17OS_dispatch_queueC", "async"]
+- !private ["So17OS_dispatch_queueC", "main"]
 - !private ["SE", "canDelete"]
 - !private ["SE", "details"]
 - !private ["SE", "id"]
@@ -77,7 +88,9 @@ depends-member:
 - !private ["SE", "replacingOccurrences"]
 - !private ["SE", "subscript"]
 - !private ["SE", "topicSlug"]
+- !private ["SQ", "async"]
 - !private ["SQ", "failure"]
+- !private ["SQ", "main"]
 - !private ["SQ", "replacingOccurrences"]
 - !private ["SQ", "subscript"]
 - !private ["SQ", "success"]
@@ -86,7 +99,9 @@ depends-member:
 - !private ["s32ExpressibleByStringInterpolationP", "replacingOccurrences"]
 - !private ["s26ExpressibleByStringLiteralP", "replacingOccurrences"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "replacingOccurrences"]
+- !private ["SH", "async"]
 - !private ["SH", "failure"]
+- !private ["SH", "main"]
 - !private ["SH", "replacingOccurrences"]
 - !private ["SH", "subscript"]
 - !private ["SH", "success"]
@@ -99,10 +114,16 @@ depends-member:
 - !private ["So21NSItemProviderReadingP", "replacingOccurrences"]
 - !private ["So21NSItemProviderWritingP", "replacingOccurrences"]
 - !private ["So16NSMutableCopyingP", "replacingOccurrences"]
+- !private ["So8NSObjectC", "async"]
+- !private ["So8NSObjectC", "main"]
 - !private ["So8NSObjectC", "replacingOccurrences"]
+- !private ["So8NSObjectP", "async"]
+- !private ["So8NSObjectP", "main"]
 - !private ["So8NSObjectP", "replacingOccurrences"]
 - !private ["So14NSSecureCodingP", "replacingOccurrences"]
 - !private ["So8NSStringC", "replacingOccurrences"]
+- !private ["So9OS_objectC", "async"]
+- !private ["So9OS_objectC", "main"]
 - !private ["15DiscourseClient4PostV", "id"]
 - !private ["15DiscourseClient4PostV", "name"]
 - !private ["15DiscourseClient4PostV", "topicSlug"]
@@ -112,6 +133,8 @@ depends-member:
 - !private ["Sm", "subscript"]
 - !private ["s6ResultO", "failure"]
 - !private ["s6ResultO", "success"]
+- !private ["7Combine9SchedulerP", "async"]
+- !private ["7Combine9SchedulerP", "main"]
 - !private ["ST", "replacingOccurrences"]
 - !private ["ST", "subscript"]
 - !private ["15DiscourseClient19SingleTopicResponseV", "details"]
@@ -131,6 +154,7 @@ depends-member:
 - ["15DiscourseClient23TopicDetailViewDelegateP", "Bool"]
 - ["15DiscourseClient23TopicDetailViewDelegateP", "errorFetchingTopicDetail"]
 - ["15DiscourseClient23TopicDetailViewDelegateP", "topicDetailFetched"]
+- !private ["15DiscourseClient20TopicDetailViewModelC", "DispatchQueue"]
 - ["15DiscourseClient20TopicDetailViewModelC", "Int"]
 - ["15DiscourseClient20TopicDetailViewModelC", "String"]
 - ["15DiscourseClient20TopicDetailViewModelC", "TopicDetailCoordinatorDelegate"]
@@ -158,7 +182,11 @@ depends-member:
 - !private ["s19_HasContiguousBytesP", "subscript"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "replacingOccurrences"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "replacingOccurrences"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "async"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "replacingOccurrences"]
 - !private ["s21_ObjectiveCBridgeableP", "replacingOccurrences"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
@@ -176,6 +204,8 @@ depends-nominal:
 - !private "Se"
 - !private "s26DefaultStringInterpolationV"
 - !private "15DiscourseClient7DetailsV"
+- !private "So18OS_dispatch_objectC"
+- !private "So17OS_dispatch_queueC"
 - !private "SE"
 - !private "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
@@ -197,11 +227,13 @@ depends-nominal:
 - !private "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - !private "So8NSStringC"
+- !private "So9OS_objectC"
 - !private "15DiscourseClient4PostV"
 - !private "15DiscourseClient5PostsV"
 - !private "Sk"
 - !private "Sm"
 - !private "s6ResultO"
+- !private "7Combine9SchedulerP"
 - !private "ST"
 - !private "15DiscourseClient19SingleTopicResponseV"
 - !private "SS"

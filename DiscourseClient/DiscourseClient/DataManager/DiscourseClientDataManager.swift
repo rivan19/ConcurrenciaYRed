@@ -28,6 +28,18 @@ extension DiscourseClientDataManager: TopicsDataManager {
     }
 }
 
+extension DiscourseClientDataManager: CategoriesDataManager {
+    func fetchAllCategories(completion: @escaping (Result<CategoriesResponse?, Error>) -> ()) {
+        remoteDataManager.fetchAllCategories(completion: completion)
+    }
+}
+
+extension DiscourseClientDataManager: UsersDataManager {
+    func fetchAllUsers(completion: @escaping (Result<UsersResponse?, Error>) -> ()) {
+        remoteDataManager.fetchAllUsers(completion: completion)
+    }
+}
+
 extension DiscourseClientDataManager: TopicDetailDataManager {
     func deleteTopic(id: Int, completion: @escaping (Result<RemoveTopicResponse?, Error>) -> ()) {
         remoteDataManager.deleteTopic(id: id, completion: completion)
