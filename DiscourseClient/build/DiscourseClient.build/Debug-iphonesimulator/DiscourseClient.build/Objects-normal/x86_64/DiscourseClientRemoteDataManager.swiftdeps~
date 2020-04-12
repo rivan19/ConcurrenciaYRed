@@ -12,6 +12,7 @@ depends-top-level:
 - "Error"
 - "Int"
 - "LatestTopicsResponse"
+- "RemoveTopicResponse"
 - "Result"
 - "SingleTopicResponse"
 - "String"
@@ -20,10 +21,12 @@ depends-member:
 - ["15DiscourseClient0aB17RemoteDataManagerP", "Error"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "Int"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "LatestTopicsResponse"]
+- ["15DiscourseClient0aB17RemoteDataManagerP", "RemoveTopicResponse"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "Result"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "SingleTopicResponse"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "String"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "addTopic"]
+- ["15DiscourseClient0aB17RemoteDataManagerP", "deleteTopic"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "fetchAllTopics"]
 - ["15DiscourseClient0aB17RemoteDataManagerP", "fetchTopic"]
 depends-nominal:
@@ -56,4 +59,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "3fcb34e161f7be8e731bfaa28f88a836"
+interface-hash: "432313f60906ea20cfc8bfc520c0e4e3"
