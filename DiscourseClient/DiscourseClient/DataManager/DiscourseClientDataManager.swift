@@ -40,6 +40,17 @@ extension DiscourseClientDataManager: UsersDataManager {
     }
 }
 
+extension DiscourseClientDataManager: UserDetailDataManager {
+    func editUser(userName: String, name: String, completion: @escaping (Result<EditSingleUserResponse?, Error>) -> ()) {
+        remoteDataManager.editUserName(userName: userName, name: name, completion: completion)
+    }
+    
+    func fetchUser(userName: String, completion: @escaping (Result<SingleUserResponse?, Error>) -> ()) {
+        remoteDataManager.fetchUser(userName: userName, completion: completion)
+    }
+    
+}
+
 extension DiscourseClientDataManager: TopicDetailDataManager {
     func deleteTopic(id: Int, completion: @escaping (Result<RemoveTopicResponse?, Error>) -> ()) {
         remoteDataManager.deleteTopic(id: id, completion: completion)

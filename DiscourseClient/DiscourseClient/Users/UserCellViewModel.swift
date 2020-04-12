@@ -15,7 +15,8 @@ class UserCellViewModel {
     
     init(user: User){
         self.user = user
-        self.textLabelText = user.name
-        self.imageString = user.avatarTemplate
+        self.textLabelText = self.user.name
+        self.imageString = self.user.avatarTemplate
+        
     }
 }

@@ -18,20 +18,41 @@ struct UsersResponse: Codable {
 
 
 struct DirectoryItem: Codable {
+    let id: Int?
+    let likesReceived: Int?
+    let likesGiven: Int?
+    let topicsEntered: Int?
+    let topicCount: Int?
+    let postCount: Int?
+    let postsRead: Int?
+    let daysVisited: Int?
     let user: User
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case likesReceived = "likes_received"
+        case likesGiven = "likes_given"
+        case topicsEntered = "topics_entered"
+        case topicCount = "topic_count"
+        case postCount = "post_count"
+        case postsRead = "posts_read"
+        case daysVisited = "days_visited"
+        case user
+    }
 }
 
 struct User: Codable {
     let id: Int?
-    let userName: String?
-    let name: String?
+    let userName: String
     let avatarTemplate: String?
+    let name: String?
     
-    enum CodindKeys: String, CodingKey {
+     enum CodingKeys: String, CodingKey {
         case id
+        case name
         case userName = "username"
-        case name = "name"
         case avatarTemplate = "avatar_template"
-    }
+           
+       }
 }
 

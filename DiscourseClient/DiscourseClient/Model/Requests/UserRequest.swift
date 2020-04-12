@@ -16,11 +16,14 @@ struct UserRequest: APIRequest {
     }
     
     var path: String{
-        return "/directory_items.json?period=daily&order=likes_received"
+        return "/directory_items.json"
     }
     
     var parameters: [String : String] {
-        return [:]
+        return [
+            "period" : "daily",
+            "order" : "likes_received"
+        ]
     }
     
     var body: [String : Any]{
